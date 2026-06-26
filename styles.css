@@ -192,3 +192,47 @@
   .partner-logos .partner-logo{width:108px}
   .partner-logos .round-logo{width:58px;height:58px}
 }
+
+
+/* CP-005 Top logo visibility fix */
+.topnav .brand,
+.topnav .brand-text{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  min-width:190px;
+  color:#101828;
+  font-weight:950;
+  letter-spacing:-.03em;
+  font-size:21px;
+  text-decoration:none;
+}
+.topnav .brand img{
+  display:block;
+  width:200px;
+  max-height:42px;
+  object-fit:contain;
+}
+.brand-mark{
+  width:38px;
+  height:38px;
+  border-radius:13px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#f3272b,#8f151a);
+  color:white;
+  font-size:14px;
+  font-weight:950;
+  letter-spacing:-.03em;
+  box-shadow:0 10px 24px rgba(243,39,43,.24);
+}
+@media(max-width:760px){
+  .topnav .brand-text span:last-child{
+    display:none;
+  }
+  .topnav .brand,
+  .topnav .brand-text{
+    min-width:auto;
+  }
+}

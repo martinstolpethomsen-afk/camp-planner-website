@@ -61,3 +61,10 @@ Updates:
 
 Static-site note:
 The newsletter form currently uses `mailto:hello@camp-planner.online`. For real list capture, connect it later to Mailchimp, Brevo, Formspree, HubSpot or the app backend.
+
+
+## CP-005 Top Logo Fix
+The top navigation logo has been replaced with a robust text/icon brand mark:
+`CP Camp-Planner`
+
+This avoids the logo disappearing if the image is too dark, cached, or visually unclear.
