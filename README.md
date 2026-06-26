@@ -50,3 +50,19 @@ Updates:
 - Placeholder partner SVG logos added in `assets/logos/partners/`.
 
 Replace placeholder SVG files with real transparent SVG/PNG logos later using the same filenames, or update the paths in `index.html`.
+
+
+## CP-004 Launch + Newsletter
+Updates:
+- Added top announcement bar: "Launching this October".
+- Added newsletter / launch-list signup section on homepage.
+- Trusted-by logos remain placeholders for now.
+- Newsletter form currently sends via `mailto:hello@camp-planner.online` until a real email service is connected.
+
+
+## CP-004B Header + Trusted Fix
+Updates:
+- Removed the top launch announcement bar from pages.
+- Added a smaller launch pill inside the homepage hero instead.
+- Replaced Trusted-by logo row with clean empty boxes.
+- Keeps newsletter signup section on homepage.

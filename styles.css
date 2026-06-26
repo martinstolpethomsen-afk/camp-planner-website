@@ -162,3 +162,155 @@
   .partner-logos img{width:112px}
   .sport-image{padding-top:60px}
 }
+
+
+/* CP-004 Launch bar + newsletter */
+.launch-bar{
+  position:relative;
+  z-index:50;
+  background:linear-gradient(90deg,#07111d,#1b2534 48%,#8f151a);
+  color:white;
+  min-height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  padding:10px 22px;
+  font-size:13px;
+  letter-spacing:.02em;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.launch-bar span{
+  background:#f3272b;
+  color:white;
+  border-radius:999px;
+  padding:5px 10px;
+  font-size:11px;
+  font-weight:950;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+.launch-bar strong{
+  font-weight:800;
+}
+.launch-bar a{
+  color:white;
+  font-weight:900;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.newsletter-section{
+  padding:88px 20px;
+  background:
+    radial-gradient(circle at 12% 20%,rgba(243,39,43,.10),transparent 30%),
+    linear-gradient(180deg,#fff,#f7f8fb);
+}
+.newsletter-inner{
+  width:min(1180px,100%);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:34px;
+  align-items:center;
+  border:1px solid var(--line);
+  border-radius:34px;
+  padding:44px;
+  background:white;
+  box-shadow:0 24px 80px rgba(16,24,40,.08);
+}
+.newsletter-copy h2{
+  font-size:clamp(36px,5vw,58px);
+  line-height:1;
+  letter-spacing:-.055em;
+  margin:0 0 18px;
+}
+.newsletter-copy p:not(.eyebrow){
+  color:#667085;
+  font-size:18px;
+  max-width:620px;
+  margin:0;
+}
+.newsletter-form{
+  display:grid;
+  gap:14px;
+  padding:26px;
+  border-radius:24px;
+  background:#07111d;
+  color:white;
+  box-shadow:0 22px 60px rgba(7,17,29,.22);
+}
+.newsletter-form label{
+  font-size:13px;
+  font-weight:900;
+}
+.newsletter-form input{
+  width:100%;
+  margin-top:8px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.06);
+  color:white;
+  border-radius:14px;
+  padding:15px 14px;
+  font:inherit;
+  outline:none;
+}
+.newsletter-form input::placeholder{
+  color:#9aa7b8;
+}
+.newsletter-form input:focus{
+  border-color:#f3272b;
+  box-shadow:0 0 0 4px rgba(243,39,43,.16);
+}
+.newsletter-form small{
+  color:#9aa7b8;
+  text-align:center;
+}
+@media(max-width:850px){
+  .launch-bar{flex-direction:column;gap:6px;text-align:center}
+  .newsletter-inner{grid-template-columns:1fr;padding:28px}
+}
+
+
+/* CP-004B Header + Trusted section fix */
+.launch-bar{display:none!important}
+.hero-launch-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 16px;
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.08);
+  color:#fff;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  backdrop-filter:blur(10px);
+}
+.trusted-empty-grid{
+  display:grid!important;
+  grid-template-columns:repeat(6,1fr);
+  gap:16px!important;
+  width:min(980px,calc(100% - 44px));
+  margin:0 auto;
+  opacity:1!important;
+}
+.trusted-empty-box{
+  min-height:58px;
+  border:1px dashed rgba(102,112,133,.36);
+  background:linear-gradient(180deg,#ffffff,#f8f9fb);
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#98a2b3;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.trusted-empty-box span{opacity:.82}
+@media(max-width:900px){.trusted-empty-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.trusted-empty-grid{grid-template-columns:repeat(2,1fr)}}

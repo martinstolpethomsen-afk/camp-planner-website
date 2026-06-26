@@ -1,5 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="260" height="80" viewBox="0 0 260 80" role="img" aria-label="IKF INTERNATIONAL">
-  <rect width="260" height="80" fill="none"/>
-  <text x="130" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" letter-spacing="3" fill="#3F4452">IKF</text>
-  <text x="130" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" letter-spacing="4" fill="#7A8090">INTERNATIONAL</text>
-</svg>
+CAMP-PLANNER WEBSITE – GITHUB UPLOAD GUIDE
+
+IMPORTANT:
+Do NOT upload this ZIP file to GitHub as a ZIP.
+
+1. Unzip this file on your computer.
+2. Open the folder named: Camp-Planner_UPLOAD_THIS_TO_GITHUB
+3. Upload the CONTENTS of the folder to the main branch in GitHub.
+
+Your GitHub repo must show these items in the root/main folder:
+
+assets/
+index.html
+login.html
+styles.css
+script.js
+README.md
+CNAME
+
+The assets folder must stay exactly like this:
+
+assets/logos/
+assets/icons/
+assets/images/
+
+Settings:
+- Website domain: camp-planner.online
+- Demo/contact email: hello@camp-planner.online
+- Login button target: https://camp-planner.dk
+
+GitHub Pages:
+Settings → Pages → Deploy from branch → main → /root
+
