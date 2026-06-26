@@ -23,3 +23,16 @@ if(menu){
     actions.style.top = '266px'; actions.style.left = '14px'; actions.style.right = '14px'; actions.style.background = 'rgba(4,10,18,.96)'; actions.style.padding = '0 18px 18px'; actions.style.borderRadius = '0 0 16px 16px';
   });
 }
+
+
+// CP-004 newsletter form helper
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("newsletterForm");
+  if (!form) return;
+  form.addEventListener("submit", () => {
+    setTimeout(() => {
+      const btn = form.querySelector("button");
+      if (btn) btn.textContent = "Opening email…";
+    }, 50);
+  });
+});

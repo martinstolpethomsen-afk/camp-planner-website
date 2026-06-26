@@ -164,153 +164,31 @@
 }
 
 
-/* CP-004 Launch bar + newsletter */
-.launch-bar{
-  position:relative;
-  z-index:50;
-  background:linear-gradient(90deg,#07111d,#1b2534 48%,#8f151a);
-  color:white;
-  min-height:42px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-  padding:10px 22px;
-  font-size:13px;
-  letter-spacing:.02em;
-  border-bottom:1px solid rgba(255,255,255,.1);
+/* CP-004 Launch bar, newsletter and real trusted logos */
+.launch-bar{position:sticky;top:0;z-index:60;background:linear-gradient(90deg,#f3272b,#98151a);color:#fff;border-bottom:1px solid rgba(255,255,255,.18)}
+.launch-bar-inner{width:min(1180px,calc(100% - 44px));min-height:42px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:14px;text-align:center;font-size:14px}
+.launch-bar span{font-weight:950;text-transform:uppercase;letter-spacing:.14em;font-size:11px}
+.launch-bar strong{font-weight:750}.launch-bar a{color:#fff;font-weight:950;text-decoration:underline;text-underline-offset:4px}
+.partner-logos{display:flex;justify-content:center;align-items:center;gap:clamp(18px,3.8vw,54px);flex-wrap:wrap}
+.partner-logos .partner-logo{width:132px;max-height:58px;object-fit:contain;opacity:.82;filter:grayscale(1);transition:opacity .22s var(--ease), filter .22s var(--ease), transform .22s var(--ease)}
+.partner-logos .maas-logo{width:118px;max-height:48px}
+.partner-logos .round-logo{width:70px;height:70px;max-height:70px;border-radius:50%}
+.partner-logos .niva-logo{width:82px;max-height:70px;border-radius:14px}
+.partner-logos .placeholder-logo{width:124px;max-height:50px}
+.partner-logos .partner-logo:hover{opacity:1;filter:grayscale(0);transform:translateY(-2px)}
+.newsletter-section{padding:90px 22px;background:#fff}
+.newsletter-card{width:min(1180px,100%);margin:0 auto;display:grid;grid-template-columns:1fr 440px;gap:42px;align-items:center;background:radial-gradient(circle at 15% 20%,rgba(243,39,43,.18),transparent 28%),linear-gradient(135deg,#07111d,#111827 52%,#8f151a);color:#fff;border-radius:34px;padding:54px;box-shadow:var(--shadow);overflow:hidden;position:relative}
+.newsletter-card:after{content:"";position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;border:38px solid rgba(255,255,255,.06)}
+.newsletter-copy,.newsletter-form{position:relative;z-index:1}
+.newsletter-copy h2{font-size:clamp(36px,5vw,64px);line-height:1;letter-spacing:-.055em;margin:0 0 18px}
+.newsletter-copy p:not(.eyebrow){color:#d6dce7;font-size:18px;max-width:650px;margin:0}
+.newsletter-form{background:#fff;color:#101828;border-radius:24px;padding:26px;display:grid;gap:14px;box-shadow:0 24px 70px rgba(0,0,0,.22)}
+.newsletter-form label{font-weight:850;font-size:13px}
+.newsletter-form input{width:100%;margin-top:8px;border:1px solid var(--line);border-radius:12px;padding:14px;font:inherit}
+.newsletter-form small{color:#667085;text-align:center}
+@media(max-width:900px){
+  .launch-bar-inner{flex-direction:column;gap:3px;padding:8px 0}
+  .newsletter-card{grid-template-columns:1fr;padding:34px}
+  .partner-logos .partner-logo{width:108px}
+  .partner-logos .round-logo{width:58px;height:58px}
 }
-.launch-bar span{
-  background:#f3272b;
-  color:white;
-  border-radius:999px;
-  padding:5px 10px;
-  font-size:11px;
-  font-weight:950;
-  text-transform:uppercase;
-  letter-spacing:.12em;
-}
-.launch-bar strong{
-  font-weight:800;
-}
-.launch-bar a{
-  color:white;
-  font-weight:900;
-  text-decoration:underline;
-  text-underline-offset:4px;
-}
-.newsletter-section{
-  padding:88px 20px;
-  background:
-    radial-gradient(circle at 12% 20%,rgba(243,39,43,.10),transparent 30%),
-    linear-gradient(180deg,#fff,#f7f8fb);
-}
-.newsletter-inner{
-  width:min(1180px,100%);
-  margin:0 auto;
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  gap:34px;
-  align-items:center;
-  border:1px solid var(--line);
-  border-radius:34px;
-  padding:44px;
-  background:white;
-  box-shadow:0 24px 80px rgba(16,24,40,.08);
-}
-.newsletter-copy h2{
-  font-size:clamp(36px,5vw,58px);
-  line-height:1;
-  letter-spacing:-.055em;
-  margin:0 0 18px;
-}
-.newsletter-copy p:not(.eyebrow){
-  color:#667085;
-  font-size:18px;
-  max-width:620px;
-  margin:0;
-}
-.newsletter-form{
-  display:grid;
-  gap:14px;
-  padding:26px;
-  border-radius:24px;
-  background:#07111d;
-  color:white;
-  box-shadow:0 22px 60px rgba(7,17,29,.22);
-}
-.newsletter-form label{
-  font-size:13px;
-  font-weight:900;
-}
-.newsletter-form input{
-  width:100%;
-  margin-top:8px;
-  border:1px solid rgba(255,255,255,.14);
-  background:rgba(255,255,255,.06);
-  color:white;
-  border-radius:14px;
-  padding:15px 14px;
-  font:inherit;
-  outline:none;
-}
-.newsletter-form input::placeholder{
-  color:#9aa7b8;
-}
-.newsletter-form input:focus{
-  border-color:#f3272b;
-  box-shadow:0 0 0 4px rgba(243,39,43,.16);
-}
-.newsletter-form small{
-  color:#9aa7b8;
-  text-align:center;
-}
-@media(max-width:850px){
-  .launch-bar{flex-direction:column;gap:6px;text-align:center}
-  .newsletter-inner{grid-template-columns:1fr;padding:28px}
-}
-
-
-/* CP-004B Header + Trusted section fix */
-.launch-bar{display:none!important}
-.hero-launch-pill{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  margin:0 0 16px;
-  padding:8px 12px;
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.08);
-  color:#fff;
-  border-radius:999px;
-  font-size:12px;
-  font-weight:900;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  backdrop-filter:blur(10px);
-}
-.trusted-empty-grid{
-  display:grid!important;
-  grid-template-columns:repeat(6,1fr);
-  gap:16px!important;
-  width:min(980px,calc(100% - 44px));
-  margin:0 auto;
-  opacity:1!important;
-}
-.trusted-empty-box{
-  min-height:58px;
-  border:1px dashed rgba(102,112,133,.36);
-  background:linear-gradient(180deg,#ffffff,#f8f9fb);
-  border-radius:16px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#98a2b3;
-  font-size:11px;
-  font-weight:900;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-}
-.trusted-empty-box span{opacity:.82}
-@media(max-width:900px){.trusted-empty-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:560px){.trusted-empty-grid{grid-template-columns:repeat(2,1fr)}}

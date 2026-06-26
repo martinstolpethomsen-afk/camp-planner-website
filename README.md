@@ -52,17 +52,12 @@ Updates:
 Replace placeholder SVG files with real transparent SVG/PNG logos later using the same filenames, or update the paths in `index.html`.
 
 
-## CP-004 Launch + Newsletter
+## CP-004 Launch + Trusted Update
 Updates:
-- Added top announcement bar: "Launching this October".
-- Added newsletter / launch-list signup section on homepage.
-- Trusted-by logos remain placeholders for now.
-- Newsletter form currently sends via `mailto:hello@camp-planner.online` until a real email service is connected.
+- Added top launch announcement bar: "Launching this October".
+- Added newsletter signup section on homepage.
+- Added real MAAS, Tora Ryu/Nivå and Nivå Budoklub logos to Trusted section.
+- Kept placeholder logo slots for Budo Nord, WUKF and IKF until real logos are provided.
 
-
-## CP-004B Header + Trusted Fix
-Updates:
-- Removed the top launch announcement bar from pages.
-- Added a smaller launch pill inside the homepage hero instead.
-- Replaced Trusted-by logo row with clean empty boxes.
-- Keeps newsletter signup section on homepage.
+Static-site note:
+The newsletter form currently uses `mailto:hello@camp-planner.online`. For real list capture, connect it later to Mailchimp, Brevo, Formspree, HubSpot or the app backend.

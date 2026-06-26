@@ -9,7 +9,15 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="site-header" id="top">
+  <div class="launch-bar">
+    <div class="launch-bar-inner">
+      <span>Launching this October</span>
+      <strong>Camp-Planner is getting ready for release.</strong>
+      <a href="#newsletter">Stay tuned</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="Camp-Planner home">
       <img src="assets/logos/logo-dark.png" alt="Camp-Planner logo" />
     </a>
@@ -32,7 +40,6 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-inner">
         <div class="hero-copy reveal">
-          <div class="hero-launch-pill">Launching this October · Stay tuned</div>
           <p class="eyebrow">The operating system for sports events</p>
           <h1>Plan less.<br><span>Experience more.</span></h1>
           <p class="hero-lead">Camp-Planner is the all-in-one platform for planning, managing and delivering unforgettable sports events.</p>
@@ -68,13 +75,13 @@
 
     <section class="trusted">
       <p>Trusted by organizers worldwide</p>
-      <div class="logo-row trusted-empty-grid">
-        <div class="trusted-empty-box"><span>Partner logo</span></div>
-        <div class="trusted-empty-box"><span>Federation logo</span></div>
-        <div class="trusted-empty-box"><span>Club logo</span></div>
-        <div class="trusted-empty-box"><span>Event logo</span></div>
-        <div class="trusted-empty-box"><span>Organization logo</span></div>
-        <div class="trusted-empty-box"><span>Coming soon</span></div>
+      <div class="logo-row partner-logos">
+        <img class="partner-logo maas-logo" src="assets/logos/partners/maas-real.png" alt="MAAS Global logo">
+        <img class="partner-logo round-logo" src="assets/logos/partners/tora-ryu-real.png" alt="Tora Ryu Jiu-Jitsu Nivå Budoklub logo">
+        <img class="partner-logo niva-logo" src="assets/logos/partners/niva-real.png" alt="Nivå Budoklub logo">
+        <img class="partner-logo placeholder-logo" src="assets/logos/partners/budo-nord.svg" alt="Budo Nord logo placeholder">
+        <img class="partner-logo placeholder-logo" src="assets/logos/partners/wukf.svg" alt="WUKF logo placeholder">
+        <img class="partner-logo placeholder-logo" src="assets/logos/partners/ikf.svg" alt="IKF logo placeholder">
       </div>
     </section>
 
@@ -176,7 +183,31 @@
       </div>
     </section>
 
-    <section class="final-cta" id="demo">
+    
+  <section id="newsletter" class="newsletter-section">
+    <div class="newsletter-card">
+      <div class="newsletter-copy">
+        <p class="eyebrow red">Launching this October</p>
+        <h2>Be first to know when Camp-Planner goes live.</h2>
+        <p>Join the pre-launch list for product updates, early access opportunities and release news.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" action="mailto:hello@camp-planner.online?subject=Camp-Planner newsletter signup" method="post" enctype="text/plain">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@organization.com" required>
+        </label>
+        <button class="btn primary" type="submit">Notify me</button>
+        <small>No spam. Just launch updates and early access news.</small>
+      </form>
+    </div>
+  </section>
+
+
+  <section class="final-cta" id="demo">
       <div class="cta-copy reveal">
         <p class="eyebrow">Ready to launch?</p>
         <h2>Deliver your best event yet.</h2>
