@@ -236,3 +236,20 @@
     min-width:auto;
   }
 }
+
+
+/* CP-006 Performance + sport card CTA/text overlap fix */
+.sports-grid{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));align-items:stretch}
+.sport-card{min-height:390px;padding:22px 18px 78px;isolation:isolate}
+.sport-card h3{font-size:17px;line-height:1.25;max-width:132px}
+.sport-card p{font-size:13.5px;line-height:1.48;max-width:132px;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.sport-card span{right:18px;bottom:22px;z-index:4;box-shadow:0 12px 26px rgba(0,0,0,.22)}
+.sport-card:after{content:"";position:absolute;left:0;right:0;bottom:0;height:58%;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.72) 52%,rgba(0,0,0,.92));z-index:0;pointer-events:none}
+.sport-card>h3,.sport-card>p,.sport-card>span{position:relative;z-index:3}
+.sport-image{z-index:0}
+.sport-image img{width:68px;height:68px}
+.sport-image.your .sport-mark{font-size:78px}
+.hero-bg,.sport-image,.final-cta{background-color:#07111d}
+img{max-width:100%}
+@media(max-width:1180px){.sports-grid{grid-template-columns:repeat(3,1fr)}.sport-card h3,.sport-card p{max-width:170px}}
+@media(max-width:760px){.sports-grid{grid-template-columns:1fr}.sport-card{min-height:280px}.sport-card h3,.sport-card p{max-width:70%}}

@@ -68,3 +68,10 @@ The top navigation logo has been replaced with a robust text/icon brand mark:
 `CP Camp-Planner`
 
 This avoids the logo disappearing if the image is too dark, cached, or visually unclear.
+
+
+## CP-006 Performance + CTA Fix
+- Optimized image assets for faster loading.
+- Fixed event card CTA overlap.
+- Improved card text spacing and mobile responsiveness.
+- Added hero image preload.
