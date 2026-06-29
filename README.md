@@ -75,3 +75,23 @@ This avoids the logo disappearing if the image is too dark, cached, or visually 
 - Fixed event card CTA overlap.
 - Improved card text spacing and mobile responsiveness.
 - Added hero image preload.
+
+
+## CP-007 Event Cards No Arrow
+Updates:
+- Removed the white circular arrow CTA dots from event cards.
+- Made the full event card act as the visual CTA.
+- Improved card spacing after removing the arrow.
+
+
+## CP-008 Founder Flip Cards + About Page
+Updates:
+- Added founder flip-card section to homepage.
+- Added `about.html`.
+- Added professional founder image and sports/action founder image.
+- Updated founder story:
+  - Founder, Camp-Planner
+  - Former CEO of a software development company
+  - Founder and Kancho of Nivå Budoklub
+  - Kancho of MAAS Denmark
+  - International teaching and camp support experience
