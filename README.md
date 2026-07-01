@@ -95,3 +95,43 @@ Updates:
   - Founder and Kancho of Nivå Budoklub
   - Kancho of MAAS Denmark
   - International teaching and camp support experience
+
+
+## CP-009 Readability + Single Founder Card
+Updates:
+- Fixed event card readability after CTA arrow removal.
+- Removed the white round arrows completely.
+- Changed founder section from two flip-cards to one single flip-card:
+  - front: professional side
+  - back: sports/event organizer side
+
+
+## CP-010 Owner Footer
+Updates:
+- Added brand and product owner information to website footer:
+  TK Virksomhedsservice
+  Solager 7
+  DK-2990 Nivaa
+  Denmark
+  Org. no: 42123242
+
+
+## CP-011 Front Box Hover Readability
+Updates:
+- Improved front page 6-box / sport-card readability.
+- Added hover lightening effect.
+- Kept the white round arrow CTA removed.
+
+
+## CP-012 HubSpot Lead Capture
+- Added book-demo.html
+- Added pilot-program.html
+- Added HubSpot placeholders for Book Demo, Join Launch List, Pilot Program
+- Added setup guide
+
+
+## CP-013 Bottom Bar + Single Founder Fix
+- Moved red launch bar to fixed bottom position.
+- Rebuilt homepage founder section as one single flip-card.
+- Hid old double flip-card markup/CSS.
+- Ensured correct founder images are included.
