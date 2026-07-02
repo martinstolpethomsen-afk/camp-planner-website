@@ -1009,3 +1009,133 @@ body{padding-bottom:58px!important}
 .sport-card.special > div:last-of-type{
   background:linear-gradient(180deg, rgba(70,0,10,0) 0%, rgba(70,0,10,.16) 25%, rgba(70,0,10,.34) 100%)!important;
 }
+
+
+/* CP-020 Consistent topbar fix across all pages */
+.topnav{
+  min-height:82px!important;
+  height:82px!important;
+  padding:14px 32px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:28px!important;
+  box-sizing:border-box!important;
+  background:#f8fafc!important;
+  border-bottom:1px solid rgba(16,24,40,.08)!important;
+}
+
+.topnav .brand,
+.topnav .brand.brand-text,
+.brand.brand-text{
+  display:flex!important;
+  align-items:center!important;
+  gap:11px!important;
+  height:44px!important;
+  max-height:44px!important;
+  min-width:230px!important;
+  flex-shrink:0!important;
+  text-decoration:none!important;
+  line-height:1!important;
+}
+
+.brand-mark{
+  width:32px!important;
+  height:32px!important;
+  min-width:32px!important;
+  max-width:32px!important;
+  border-radius:10px!important;
+  font-size:12px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  line-height:1!important;
+}
+
+.brand-text span:last-child{
+  font-size:18px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  color:#101828!important;
+  font-weight:950!important;
+}
+
+.topnav .brand img{
+  height:30px!important;
+  max-height:30px!important;
+  width:auto!important;
+  max-width:150px!important;
+  object-fit:contain!important;
+  display:block!important;
+}
+
+.topnav nav{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  flex-wrap:wrap!important;
+  gap:26px!important;
+  row-gap:8px!important;
+  min-height:44px!important;
+  line-height:1!important;
+}
+
+.topnav nav a{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:36px!important;
+  padding:7px 0!important;
+  text-decoration:none!important;
+  white-space:nowrap!important;
+  font-size:16px!important;
+  font-weight:800!important;
+  color:#344054!important;
+  line-height:1!important;
+}
+
+.topnav nav a:hover,
+.topnav nav a.active{
+  color:#f3272b!important;
+}
+
+.topnav nav a.login-link{
+  color:#101828!important;
+}
+
+.topnav nav a.login-link:hover{
+  color:#f3272b!important;
+}
+
+@media(max-width:980px){
+  .topnav{
+    height:auto!important;
+    min-height:78px!important;
+    padding:14px 20px!important;
+    align-items:flex-start!important;
+    flex-direction:column!important;
+    gap:12px!important;
+  }
+  .topnav .brand,
+  .topnav .brand.brand-text,
+  .brand.brand-text{
+    min-width:0!important;
+  }
+  .topnav nav{
+    width:100%!important;
+    justify-content:flex-start!important;
+    gap:18px!important;
+  }
+  .topnav nav a{
+    font-size:15px!important;
+  }
+}
+
+@media(max-width:640px){
+  .topnav nav{
+    gap:12px!important;
+  }
+  .topnav nav a{
+    font-size:14px!important;
+  }
+}

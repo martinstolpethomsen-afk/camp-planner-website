@@ -188,3 +188,11 @@ Updates:
 - Added a lighter text-panel treatment for better readability.
 - Increased heading/text contrast.
 - Improved hover readability and card brightness.
+
+
+## CP-020 Consistent Topbar Fix
+Updates:
+- Fixed inconsistent topbar spacing on Pilot Program page.
+- Added consistent nav gap and link styling across all pages.
+- Locked brand/logo size and topbar height.
+- Improved responsive behavior on smaller screens.
