@@ -135,3 +135,48 @@ Updates:
 - Rebuilt homepage founder section as one single flip-card.
 - Hid old double flip-card markup/CSS.
 - Ensured correct founder images are included.
+
+
+## CP-014 Topbar + Founder Text + Links
+Updates:
+- Reduced topbar logo size.
+- Slowed founder flip animation.
+- Sharpened founder copy.
+- Added link buttons:
+  - LinkedIn profile placeholder
+  - Nivå Budoklub
+  - MAAS
+Note: Replace LinkedIn and MAAS URLs with the final official links if needed.
+
+
+## CP-015 Remove Founder Links
+Updates:
+- Removed founder card link buttons again.
+- Kept improved founder text.
+- Kept smaller topbar logo.
+- Kept slower founder flip animation.
+
+
+## CP-016 Founder Headline Two Lines
+Updates:
+- Changed founder headline to a clean two-line break:
+  Built from the floor.
+  Designed for the future.
+
+
+## CP-017 Event Headline + Participant Flow
+Updates:
+- Split headline into two lines:
+  Build your event once.
+  Run it everywhere.
+- Added participant invitation / participant registration focus.
+- Added volunteer management focus.
+- Added people-flow section to platform page.
+
+
+## CP-018 Topbar Logo Hard Fix
+Updates:
+- Increased topbar height slightly.
+- Locked logo image height to 30px.
+- Locked text/logo fallback mark to 30px.
+- Added fixed brand container height to stop logo from pushing layout.
