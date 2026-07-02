@@ -211,3 +211,19 @@ Updates:
 - Repaired navigation spacing with both real HTML whitespace and explicit CSS margins.
 - Kept consistent topbar height and smaller logo.
 - Added CP022 page marker for upload confirmation.
+
+
+## CP-023 Sync Topbar All Pages
+Updates:
+- Replaced topbar HTML on all pages with one clean shared structure.
+- Fixed menu spacing issue on subpages.
+- Removed bad CP-021 inline topbar style.
+- Added CP023 marker for upload confirmation.
+
+
+## CP-024 Bulletproof Topbar
+Updates:
+- Replaced the topbar on every HTML page with a new simple inline-styled topbar.
+- Each nav link now has direct inline margin and styling.
+- This avoids CSS cache/cascade failures and prevents menu items from collapsing together.
+- Added CP024_BULLETPROOF_TOPBAR marker in every page.

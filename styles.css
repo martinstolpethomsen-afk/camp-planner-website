@@ -1275,3 +1275,146 @@ body{padding-bottom:58px!important}
     font-size:14px!important;
   }
 }
+
+
+/* CP-023 synced clean topbar across all pages */
+.cp-topbar,
+header.topnav.cp-topbar{
+  min-height:82px!important;
+  height:82px!important;
+  padding:14px 32px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:32px!important;
+  box-sizing:border-box!important;
+  background:#f8fafc!important;
+  border-bottom:1px solid rgba(16,24,40,.08)!important;
+  position:relative!important;
+  z-index:50!important;
+}
+
+.cp-topbar .brand,
+.cp-topbar a.brand,
+.cp-topbar .brand.brand-text{
+  display:flex!important;
+  align-items:center!important;
+  gap:11px!important;
+  height:44px!important;
+  max-height:44px!important;
+  min-width:230px!important;
+  flex-shrink:0!important;
+  text-decoration:none!important;
+  line-height:1!important;
+  overflow:hidden!important;
+}
+
+.cp-topbar .brand-mark{
+  width:32px!important;
+  height:32px!important;
+  min-width:32px!important;
+  max-width:32px!important;
+  border-radius:10px!important;
+  font-size:12px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  line-height:1!important;
+  background:#d71920!important;
+  color:#fff!important;
+  font-weight:950!important;
+}
+
+.cp-topbar .brand-text span:last-child{
+  font-size:18px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  color:#101828!important;
+  font-weight:950!important;
+}
+
+.cp-topbar .cp-nav,
+.cp-topbar nav{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  flex-wrap:nowrap!important;
+  gap:24px!important;
+  min-height:44px!important;
+  line-height:1!important;
+}
+
+.cp-topbar .cp-nav a,
+.cp-topbar nav a{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:36px!important;
+  padding:7px 0!important;
+  margin:0!important;
+  text-decoration:none!important;
+  white-space:nowrap!important;
+  font-size:16px!important;
+  font-weight:800!important;
+  color:#344054!important;
+  line-height:1!important;
+}
+
+.cp-topbar .cp-nav a:hover,
+.cp-topbar .cp-nav a.active,
+.cp-topbar nav a:hover,
+.cp-topbar nav a.active{
+  color:#f3272b!important;
+}
+
+.cp-topbar .cp-nav a.login-link,
+.cp-topbar nav a.login-link{
+  color:#101828!important;
+}
+
+@media(max-width:1100px){
+  .cp-topbar,
+  header.topnav.cp-topbar{
+    height:auto!important;
+    min-height:82px!important;
+    align-items:flex-start!important;
+    flex-direction:column!important;
+    gap:12px!important;
+  }
+  .cp-topbar .brand,
+  .cp-topbar a.brand,
+  .cp-topbar .brand.brand-text{
+    min-width:0!important;
+  }
+  .cp-topbar .cp-nav,
+  .cp-topbar nav{
+    justify-content:flex-start!important;
+    flex-wrap:wrap!important;
+    gap:18px!important;
+  }
+  .cp-topbar .cp-nav a,
+  .cp-topbar nav a{
+    font-size:15px!important;
+  }
+}
+
+
+/* CP024 bulletproof topbar fallback */
+@media(max-width:1050px){
+  header[style*="height:82px"]{
+    height:auto!important;
+    min-height:82px!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:14px!important;
+  }
+  header[style*="height:82px"] nav{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    justify-content:flex-start!important;
+    gap:16px!important;
+  }
+  header[style*="height:82px"] nav a{
+    margin-left:0!important;
+  }
+}
