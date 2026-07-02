@@ -196,3 +196,18 @@ Updates:
 - Added consistent nav gap and link styling across all pages.
 - Locked brand/logo size and topbar height.
 - Improved responsive behavior on smaller screens.
+
+
+## CP-021 Inline Topbar Cache Bust Fix
+Updates:
+- Added topbar styling inline in every HTML page.
+- This bypasses cached styles.css issues.
+- Added CP021 marker comment in each page to confirm upload.
+
+
+## CP-022 Topbar Menu Repair
+Updates:
+- Removed CP-021 inline topbar CSS.
+- Repaired navigation spacing with both real HTML whitespace and explicit CSS margins.
+- Kept consistent topbar height and smaller logo.
+- Added CP022 page marker for upload confirmation.
