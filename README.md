@@ -180,3 +180,11 @@ Updates:
 - Locked logo image height to 30px.
 - Locked text/logo fallback mark to 30px.
 - Added fixed brand container height to stop logo from pushing layout.
+
+
+## CP-019 Sport Boxes Brightness Fix
+Updates:
+- Reduced dark overlay on the 6 sport/event cards.
+- Added a lighter text-panel treatment for better readability.
+- Increased heading/text contrast.
+- Improved hover readability and card brightness.

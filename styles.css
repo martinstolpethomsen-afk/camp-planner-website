@@ -942,3 +942,70 @@ body{padding-bottom:58px!important}
     font-size:16px!important;
   }
 }
+
+
+/* CP-019 Sport boxes brightness + readability fix */
+.sport-card{
+  box-shadow:0 20px 60px rgba(0,0,0,.18)!important;
+}
+
+.sport-card:before{
+  background:linear-gradient(
+    180deg,
+    rgba(5,10,18,.04) 0%,
+    rgba(5,10,18,.12) 38%,
+    rgba(5,10,18,.42) 72%,
+    rgba(5,10,18,.58) 100%
+  )!important;
+}
+
+.sport-card > div:last-of-type{
+  background:linear-gradient(180deg, rgba(6,12,20,0) 0%, rgba(6,12,20,.30) 20%, rgba(6,12,20,.58) 100%)!important;
+  border-radius:18px!important;
+  padding:12px 12px 14px!important;
+  backdrop-filter:blur(3px)!important;
+  -webkit-backdrop-filter:blur(3px)!important;
+}
+
+.sport-card h3{
+  color:#ffffff!important;
+  font-size:19px!important;
+  line-height:1.08!important;
+  margin:0 0 8px!important;
+  text-shadow:0 2px 14px rgba(0,0,0,.28)!important;
+}
+
+.sport-card p{
+  color:rgba(255,255,255,.92)!important;
+  font-size:14px!important;
+  line-height:1.35!important;
+  text-shadow:0 2px 12px rgba(0,0,0,.22)!important;
+}
+
+.sport-image img{
+  opacity:.94!important;
+}
+
+.sport-mark{
+  opacity:.95!important;
+}
+
+.sport-card:hover{
+  transform:translateY(-8px)!important;
+  border-color:rgba(243,39,43,.75)!important;
+  box-shadow:0 26px 70px rgba(0,0,0,.22)!important;
+}
+
+.sport-card:hover:before{
+  background:linear-gradient(
+    180deg,
+    rgba(5,10,18,.02) 0%,
+    rgba(5,10,18,.08) 38%,
+    rgba(5,10,18,.32) 72%,
+    rgba(5,10,18,.48) 100%
+  )!important;
+}
+
+.sport-card.special > div:last-of-type{
+  background:linear-gradient(180deg, rgba(70,0,10,0) 0%, rgba(70,0,10,.16) 25%, rgba(70,0,10,.34) 100%)!important;
+}
