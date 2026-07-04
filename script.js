@@ -36,3 +36,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 50);
   });
 });
+
+
+// CP-026: lightweight reveal fallback
+(function(){
+  if (!('IntersectionObserver' in window)) return;
+  var items = document.querySelectorAll('.reveal');
+  if (!items.length) return;
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.12});
+  items.forEach(function(item){ obs.observe(item); });
+})();

@@ -1,25 +1,5 @@
-CP-021 Inline Topbar Cache Bust Fix
-
-This package includes inline topbar CSS inside every HTML page.
-It should show changes even if styles.css is cached by the browser.
-
-Upload the CONTENTS of this ZIP to GitHub main/root:
-- index.html
-- platform.html
-- about.html
-- book-demo.html
-- pilot-program.html
-- login.html
-- styles.css
-- assets/
-
-After upload:
-1. Wait for GitHub Pages deployment to complete.
-2. Open https://camp-planner.online/pilot-program.html?cp021
-3. Hard refresh:
-   Mac: Cmd + Shift + R
-   Windows: Ctrl + F5
-
-To confirm upload:
-Open page source and search for:
-CP021_INLINE_TOPBAR_CACHE_BUST_FIX
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="80" viewBox="0 0 260 80" role="img" aria-label="NIVÅ BUDOKLUB">
+  <rect width="260" height="80" fill="none"/>
+  <text x="130" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" letter-spacing="3" fill="#3F4452">NIVÅ</text>
+  <text x="130" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" letter-spacing="4" fill="#7A8090">BUDOKLUB</text>
+</svg>

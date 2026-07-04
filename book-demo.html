@@ -1,97 +1,14 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Book Demo | Camp-Planner</title>
-  <meta name="description" content="Book a Camp-Planner demo for your sports event." />
-  <link rel="icon" href="assets/logos/logo-icon.png" />
-  <link rel="stylesheet" href="styles.css" />
+CP-022 Topbar Menu Repair
 
-</head>
-<body>
-  
-  
-  <div class="launch-bar">
-    <div class="launch-bar-inner">
-      <span>Launching this October</span>
-      <strong>Camp-Planner is getting ready for release.</strong>
-      <a href="index.html#newsletter">Stay tuned</a>
-    </div>
-  </div>
+This package removes the bad CP-021 inline CSS and repairs the menu spacing.
 
-  <!-- CP024_BULLETPROOF_TOPBAR -->
-  <header style="height:82px;min-height:82px;box-sizing:border-box;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;background:#f8fafc;border-bottom:1px solid rgba(16,24,40,.08);position:relative;z-index:999;">
-    <a href="index.html" style="display:flex;align-items:center;text-decoration:none;color:#101828;font-weight:950;line-height:1;white-space:nowrap;min-width:230px;">
-      <span style="display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;min-width:32px;border-radius:10px;background:#d71920;color:#fff;font-size:12px;font-weight:950;margin-right:11px;">CP</span>
-      <span style="font-size:18px;font-weight:950;color:#101828;">Camp-Planner</span>
-    </a>
-    <nav style="display:flex;align-items:center;justify-content:flex-end;white-space:nowrap;line-height:1;">
-      <a href="platform.html" style="display:inline-block;margin-left:28px;text-decoration:none;color:#344054;font-size:16px;font-weight:800;line-height:1;white-space:nowrap;">Platform</a>
-      <a href="index.html#solutions" style="display:inline-block;margin-left:28px;text-decoration:none;color:#344054;font-size:16px;font-weight:800;line-height:1;white-space:nowrap;">Solutions</a>
-      <a href="index.html#features" style="display:inline-block;margin-left:28px;text-decoration:none;color:#344054;font-size:16px;font-weight:800;line-height:1;white-space:nowrap;">Features</a>
-      <a href="about.html" style="display:inline-block;margin-left:28px;text-decoration:none;color:#344054;font-size:16px;font-weight:800;line-height:1;white-space:nowrap;">Founder</a>
-      <a href="book-demo.html" style="display:inline-block;margin-left:28px;text-decoration:none;color:#f3272b;font-size:16px;font-weight:800;line-height:1;white-space:nowrap;">Book Demo</a>
-      <a href="pilot-program.html" style="display:inline-block;margin-left:28px;text-decoration:none;color:#344054;font-size:16px;font-weight:800;line-height:1;white-space:nowrap;">Pilot Program</a>
-      <a href="https://camp-planner.dk" style="display:inline-block;margin-left:28px;text-decoration:none;color:#101828;font-size:16px;font-weight:800;line-height:1;white-space:nowrap;">Login</a>
-    </nav>
-  </header>
+After upload:
+1. Wait for GitHub Pages deployment.
+2. Open: https://camp-planner.online/pilot-program.html?cp022
+3. Hard refresh:
+   Mac: Cmd + Shift + R
+   Windows: Ctrl + F5
 
-
-  <main>
-    <section class="lead-hero">
-      <div class="lead-hero-inner">
-        <div>
-          <p class="eyebrow red">Book a demo</p>
-          <h1>See how Camp-Planner can run your next sports event.</h1>
-          <p>Book an intro call and walk through your event type, current workflow and how Camp-Planner can support planning, check-in, schedules, LiveBoard and reporting.</p>
-          <div class="lead-badges">
-            <span>HubSpot CRM</span>
-            <span>No lost leads</span>
-            <span>Camp-Planner launch</span>
-          </div>
-        </div>
-        <div class="hubspot-card">
-          <h2>Book a demo</h2>
-          <p>Replace this placeholder with your HubSpot form embed code.</p>
-          <div class="hubspot-placeholder">
-            <strong>HubSpot form placeholder</strong>
-            <span>Form: Camp-Planner - Book Demo</span>
-            <code>&lt;script&gt; hbspt.forms.create(...) &lt;/script&gt;</code>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="lead-section">
-      <div class="lead-three">
-        <article><h3>For organizers</h3><p>Walk through your event setup and planning challenges.</p></article>
-        <article><h3>For camps</h3><p>See how schedules, venues, instructors and participants connect.</p></article>
-        <article><h3>For launch partners</h3><p>Identify whether your event is a strong early fit for Camp-Planner.</p></article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div><img src="assets/logos/logo-dark.png" alt="Camp-Planner"><p>The operating system for sports events.</p></div>
-    <nav>
-      <a href="platform.html">Platform</a>
-      <a href="about.html">Founder</a>
-      <a href="book-demo.html">Book Demo</a>
-      <a href="pilot-program.html">Pilot Program</a>
-      <a href="https://camp-planner.dk">Login</a>
-    </nav>
-      <div class="footer-owner">
-        <strong>Brand and product owner</strong>
-        <span>TK Virksomhedsservice</span>
-        <span>Solager 7</span>
-        <span>DK-2990 Nivaa</span>
-        <span>Denmark</span>
-        <span>Org. no: 42123242</span>
-      </div>
-  </footer>
-
-  <script src="script.js"></script>
-  <script src="assets/js/hubspot-placeholders.js"></script>
-</body>
-</html>
+To confirm upload:
+View page source and search:
+CP022_TOPBAR_MENU_REPAIR

@@ -227,3 +227,11 @@ Updates:
 - Each nav link now has direct inline margin and styling.
 - This avoids CSS cache/cascade failures and prevents menu items from collapsing together.
 - Added CP024_BULLETPROOF_TOPBAR marker in every page.
+
+
+## CP-025 Clean Topbar Reset
+Updates:
+- Removed old topbar/header structures from all pages.
+- Added a new isolated `cp25-topbar` component to all pages.
+- Uses unique classes so old `.topnav` CSS cannot interfere.
+- Same topbar structure on every page.

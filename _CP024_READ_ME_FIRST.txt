@@ -1,16 +1,5 @@
-CP-024 Bulletproof Topbar
-
-This is a hard reset of the website topbar.
-The topbar is now inline-styled directly in each HTML page so it cannot collapse if CSS cache or cascade fails.
-
-Upload ALL contents of this ZIP to GitHub main/root.
-
-Test after deployment:
-https://camp-planner.online/pilot-program.html?cp024
-https://camp-planner.online/book-demo.html?cp024
-https://camp-planner.online/platform.html?cp024
-https://camp-planner.online/?cp024
-
-Confirm upload:
-View page source and search:
-CP024_BULLETPROOF_TOPBAR
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="80" viewBox="0 0 260 80" role="img" aria-label="TORA RYU MARTIAL ARTS">
+  <rect width="260" height="80" fill="none"/>
+  <text x="130" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" letter-spacing="3" fill="#3F4452">TORA RYU</text>
+  <text x="130" y="58" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="800" letter-spacing="4" fill="#7A8090">MARTIAL ARTS</text>
+</svg>
