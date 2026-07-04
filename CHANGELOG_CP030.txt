@@ -1,0 +1,20 @@
+CP-030 Compact Single-Line Header
+
+What changed:
+1. Kept the dark cp29 header from CP029.
+2. Reduced header height and spacing.
+3. Reduced brand/logo block width.
+4. Reduced nav font size and gaps.
+5. Prevented tablet/desktop layout from stacking into two rows.
+6. Header only stacks on true small screens below 760px.
+7. On small screens, nav scrolls horizontally instead of breaking the visual layout.
+
+Test:
+https://camp-planner.online/?cp030
+https://camp-planner.online/platform.html?cp030
+https://camp-planner.online/about.html?cp030
+https://camp-planner.online/book-demo.html?cp030
+https://camp-planner.online/pilot-program.html?cp030
+
+Confirm source:
+Search for CP030_COMPACT_SINGLE_LINE_HEADER

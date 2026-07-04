@@ -2009,3 +2009,329 @@ header[data-cp-version="028"]{
     font-size:14px;
   }
 }
+
+
+/* =========================================================
+   CP-030 COMPACT SINGLE-LINE HEADER
+   Keeps the topbar on one horizontal line on desktop/tablet.
+   Only true mobile stacks/wraps.
+   ========================================================= */
+
+.cp29-header{
+  height:74px!important;
+  min-height:74px!important;
+  padding:0 22px!important;
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:22px!important;
+  overflow:visible!important;
+}
+
+.cp29-brand{
+  height:44px!important;
+  min-width:184px!important;
+  padding:5px 9px 5px 5px!important;
+  flex:0 0 auto!important;
+}
+
+.cp29-mark{
+  width:32px!important;
+  height:32px!important;
+  min-width:32px!important;
+  max-width:32px!important;
+  margin-right:10px!important;
+}
+
+.cp29-name{
+  font-size:17px!important;
+  white-space:nowrap!important;
+}
+
+.cp29-nav{
+  width:auto!important;
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  flex-wrap:nowrap!important;
+  gap:20px!important;
+  min-width:0!important;
+  overflow:visible!important;
+}
+
+.cp29-link{
+  font-size:15px!important;
+  min-height:34px!important;
+  white-space:nowrap!important;
+  flex:0 0 auto!important;
+}
+
+/* Medium screens: keep one line, just tighten spacing */
+@media(max-width:980px){
+  .cp29-header{
+    height:70px!important;
+    min-height:70px!important;
+    padding:0 14px!important;
+    gap:14px!important;
+    flex-direction:row!important;
+    align-items:center!important;
+  }
+
+  .cp29-brand{
+    min-width:168px!important;
+    height:42px!important;
+    padding:5px 8px 5px 5px!important;
+  }
+
+  .cp29-mark{
+    width:30px!important;
+    height:30px!important;
+    min-width:30px!important;
+    max-width:30px!important;
+    font-size:11px!important;
+    margin-right:9px!important;
+  }
+
+  .cp29-name{
+    font-size:16px!important;
+  }
+
+  .cp29-nav{
+    gap:14px!important;
+    flex-wrap:nowrap!important;
+  }
+
+  .cp29-link{
+    font-size:14px!important;
+    min-height:32px!important;
+  }
+}
+
+/* Small screens: allow horizontal nav scroll instead of ugly two-line header */
+@media(max-width:760px){
+  .cp29-header{
+    height:auto!important;
+    min-height:70px!important;
+    padding:12px 14px!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:10px!important;
+  }
+
+  .cp29-nav{
+    width:100%!important;
+    justify-content:flex-start!important;
+    flex-wrap:nowrap!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    gap:16px!important;
+    padding-bottom:4px!important;
+    scrollbar-width:none!important;
+  }
+
+  .cp29-nav::-webkit-scrollbar{
+    display:none!important;
+  }
+
+  .cp29-link{
+    font-size:14px!important;
+  }
+}
+
+
+/* =========================================================
+   CP-031 REAL LOGO + STICKY HEADER FIX
+   Restores the real logo and uses the logo background tone.
+   ========================================================= */
+
+/* Hide any legacy header if old markup is cached or remains */
+.topnav,
+.site-header,
+.cp25-topbar,
+.cp27-topbar,
+.cp29-header,
+header[data-cp-version="021"],
+header[data-cp-version="022"],
+header[data-cp-version="023"],
+header[data-cp-version="024"],
+header[data-cp-version="025"],
+header[data-cp-version="026"],
+header[data-cp-version="027"],
+header[data-cp-version="028"],
+header[data-cp-version="029"],
+header[data-cp-version="030"]{
+  display:none!important;
+}
+
+.cp31-header,
+.cp31-header *{
+  box-sizing:border-box;
+}
+
+.cp31-header{
+  width:100%;
+  height:76px;
+  min-height:76px;
+  padding:0 28px;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+  background:#020d21;
+  border-bottom:1px solid rgba(255,255,255,.10);
+  box-shadow:0 12px 30px rgba(0,0,0,.20);
+  position:sticky;
+  top:0;
+  left:0;
+  right:0;
+  z-index:9000;
+}
+
+.cp31-brand{
+  height:54px;
+  width:225px;
+  min-width:225px;
+  max-width:225px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  text-decoration:none;
+  overflow:hidden;
+  border-radius:13px;
+  background:#020d21;
+}
+
+.cp31-logo{
+  display:block;
+  width:225px;
+  height:54px;
+  object-fit:contain;
+  object-position:left center;
+  background:#020d21;
+  border:0;
+  border-radius:0;
+}
+
+.cp31-nav{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:nowrap;
+  gap:24px;
+  min-width:0;
+  white-space:nowrap;
+  line-height:1;
+}
+
+.cp31-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:36px;
+  padding:0;
+  margin:0;
+  color:rgba(255,255,255,.76);
+  text-decoration:none;
+  font-size:15px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+}
+
+.cp31-link:hover{
+  color:#ffffff;
+}
+
+.cp31-login{
+  color:#ffffff;
+}
+
+.cp31-login:hover{
+  color:#f3272b;
+}
+
+@media(max-width:1050px){
+  .cp31-header{
+    height:72px;
+    min-height:72px;
+    padding:0 18px;
+    gap:18px;
+  }
+
+  .cp31-brand{
+    width:196px;
+    min-width:196px;
+    max-width:196px;
+    height:50px;
+  }
+
+  .cp31-logo{
+    width:196px;
+    height:50px;
+  }
+
+  .cp31-nav{
+    gap:16px;
+  }
+
+  .cp31-link{
+    font-size:14px;
+  }
+}
+
+@media(max-width:780px){
+  .cp31-header{
+    height:auto;
+    min-height:76px;
+    padding:12px 16px;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  .cp31-brand{
+    width:210px;
+    min-width:210px;
+    max-width:210px;
+  }
+
+  .cp31-logo{
+    width:210px;
+  }
+
+  .cp31-nav{
+    width:100%;
+    justify-content:flex-start;
+    overflow-x:auto;
+    overflow-y:hidden;
+    flex-wrap:nowrap;
+    gap:16px;
+    padding-bottom:4px;
+    scrollbar-width:none;
+  }
+
+  .cp31-nav::-webkit-scrollbar{
+    display:none;
+  }
+}
+
+@media(max-width:520px){
+  .cp31-brand{
+    width:190px;
+    min-width:190px;
+    max-width:190px;
+    height:48px;
+  }
+
+  .cp31-logo{
+    width:190px;
+    height:48px;
+  }
+
+  .cp31-link{
+    font-size:14px;
+  }
+}

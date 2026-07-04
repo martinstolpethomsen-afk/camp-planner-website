@@ -1,0 +1,29 @@
+CP-031 Real Logo + Sticky Header Fix
+
+What changed:
+1. Restored the real Camp-Planner logo in the header.
+2. Created assets/logos/logo-header-dark.png from the existing real logo-dark.png.
+3. Matched the topbar background to the logo background tone: #020d21.
+4. Made the header sticky at the top.
+5. Removed old CP/text-only temporary logo.
+6. Removed all old header/topbar variants from every HTML page.
+7. Added unique cp31-header classes.
+8. Added safety CSS hiding legacy headers from CP021-CP030.
+
+Validation:
+- Every HTML page contains exactly one CP031 marker.
+- Every HTML page contains exactly one cp31-header.
+- assets/logos/logo-header-dark.png exists.
+- ZIP validated with testzip().
+
+Test:
+https://camp-planner.online/?cp031
+https://camp-planner.online/platform.html?cp031
+https://camp-planner.online/about.html?cp031
+https://camp-planner.online/book-demo.html?cp031
+https://camp-planner.online/pilot-program.html?cp031
+https://camp-planner.online/inspiration.html?cp031
+https://camp-planner.online/login.html?cp031
+
+Confirm source:
+Search for CP031_REAL_LOGO_STICKY_HEADER
