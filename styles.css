@@ -2335,3 +2335,173 @@ header[data-cp-version="030"]{
     font-size:14px;
   }
 }
+
+
+/* =========================================================
+   CP-032 REAL LOGO NO-CROP HEADER FIX
+   Keeps CP031 sticky header, but uses the real logo-dark.png
+   directly without cropping/generating a temporary logo.
+   ========================================================= */
+
+.cp31-header{
+  width:100%!important;
+  height:76px!important;
+  min-height:76px!important;
+  padding:0 28px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:28px!important;
+  background:#020d21!important;
+  border-bottom:1px solid rgba(255,255,255,.10)!important;
+  box-shadow:0 12px 30px rgba(0,0,0,.20)!important;
+  position:sticky!important;
+  top:0!important;
+  left:0!important;
+  right:0!important;
+  z-index:9000!important;
+}
+
+.cp31-brand{
+  height:58px!important;
+  width:245px!important;
+  min-width:245px!important;
+  max-width:245px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  overflow:hidden!important;
+  background:#020d21!important;
+  border-radius:12px!important;
+  padding:0!important;
+  border:0!important;
+  text-decoration:none!important;
+}
+
+.cp31-logo{
+  display:block!important;
+  height:58px!important;
+  width:245px!important;
+  max-height:58px!important;
+  max-width:245px!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  background:#020d21!important;
+  border:0!important;
+  border-radius:0!important;
+}
+
+.cp31-nav{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  flex-wrap:nowrap!important;
+  gap:24px!important;
+  min-width:0!important;
+  white-space:nowrap!important;
+}
+
+.cp31-link{
+  font-size:15px!important;
+  font-weight:800!important;
+  color:rgba(255,255,255,.76)!important;
+  text-decoration:none!important;
+  white-space:nowrap!important;
+}
+
+.cp31-link:hover,
+.cp31-login:hover{
+  color:#ffffff!important;
+}
+
+.cp31-login{
+  color:#ffffff!important;
+}
+
+/* Hide legacy headers if anything old remains */
+.topnav,
+.site-header,
+.cp25-topbar,
+.cp27-topbar,
+.cp29-header,
+header[data-cp-version="021"],
+header[data-cp-version="022"],
+header[data-cp-version="023"],
+header[data-cp-version="024"],
+header[data-cp-version="025"],
+header[data-cp-version="026"],
+header[data-cp-version="027"],
+header[data-cp-version="028"],
+header[data-cp-version="029"],
+header[data-cp-version="030"],
+header[data-cp-version="031"]{
+  display:none!important;
+}
+
+@media(max-width:1050px){
+  .cp31-header{
+    height:72px!important;
+    min-height:72px!important;
+    padding:0 18px!important;
+    gap:18px!important;
+  }
+
+  .cp31-brand{
+    width:218px!important;
+    min-width:218px!important;
+    max-width:218px!important;
+    height:54px!important;
+  }
+
+  .cp31-logo{
+    width:218px!important;
+    max-width:218px!important;
+    height:54px!important;
+    max-height:54px!important;
+  }
+
+  .cp31-nav{
+    gap:16px!important;
+  }
+
+  .cp31-link{
+    font-size:14px!important;
+  }
+}
+
+@media(max-width:780px){
+  .cp31-header{
+    height:auto!important;
+    min-height:76px!important;
+    padding:12px 16px!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:10px!important;
+  }
+
+  .cp31-brand{
+    width:225px!important;
+    min-width:225px!important;
+    max-width:225px!important;
+  }
+
+  .cp31-logo{
+    width:225px!important;
+    max-width:225px!important;
+  }
+
+  .cp31-nav{
+    width:100%!important;
+    justify-content:flex-start!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    flex-wrap:nowrap!important;
+    gap:16px!important;
+    padding-bottom:4px!important;
+    scrollbar-width:none!important;
+  }
+
+  .cp31-nav::-webkit-scrollbar{
+    display:none!important;
+  }
+}
