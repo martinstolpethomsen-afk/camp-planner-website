@@ -2505,3 +2505,23 @@ header[data-cp-version="031"]{
     display:none!important;
   }
 }
+
+
+/* =========================================================
+   CP-033 HubSpot Pilot Program Embed
+   ========================================================= */
+
+.cp033-hubspot-form{
+  width:100%;
+  margin-top:26px;
+  border:1px solid rgba(16,24,40,.10);
+  border-radius:24px;
+  padding:20px;
+  background:#ffffff;
+  box-shadow:0 16px 45px rgba(16,24,40,.06);
+}
+
+.cp033-hubspot-form .hs-form-frame{
+  width:100%;
+  min-height:420px;
+}

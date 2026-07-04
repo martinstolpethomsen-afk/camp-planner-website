@@ -1,0 +1,18 @@
+CP-033 HubSpot Pilot Program Embed
+
+What changed:
+1. Inserted the provided HubSpot embed code into pilot-program.html.
+2. Replaced the HubSpot placeholder with the live embed frame.
+3. Added styling for the HubSpot form container.
+4. Based on CP032 Real Logo No-Crop Header Fix.
+
+HubSpot embed:
+- Portal ID: 148813068
+- Region: eu1
+- Form ID: d012533c-b290-451e-82f1-d6ed3560284f
+
+Test:
+https://camp-planner.online/pilot-program.html?cp033
+
+Confirm source:
+Search for CP033_HUBSPOT_PILOT_EMBED
