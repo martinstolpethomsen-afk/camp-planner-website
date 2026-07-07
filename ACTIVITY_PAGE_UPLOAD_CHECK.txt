@@ -1,0 +1,38 @@
+CP-038 Activity Route Fix
+
+These files must exist in the GitHub Pages root after upload:
+
+Root HTML files:
+- martial-arts-events.html
+- racket-sport-events.html
+- football-events.html
+- team-sport-events.html
+- performance-events.html
+- custom-event.html
+
+Folder route aliases:
+- martial-arts-events/index.html
+- racket-sport-events/index.html
+- football-events/index.html
+- team-sport-events/index.html
+- performance-events/index.html
+- custom-event/index.html
+
+Test URLs:
+https://camp-planner.online/martial-arts-events.html?cp038
+https://camp-planner.online/martial-arts-events/?cp038
+
+https://camp-planner.online/racket-sport-events.html?cp038
+https://camp-planner.online/racket-sport-events/?cp038
+
+https://camp-planner.online/football-events.html?cp038
+https://camp-planner.online/football-events/?cp038
+
+https://camp-planner.online/team-sport-events.html?cp038
+https://camp-planner.online/team-sport-events/?cp038
+
+https://camp-planner.online/performance-events.html?cp038
+https://camp-planner.online/performance-events/?cp038
+
+https://camp-planner.online/custom-event.html?cp038
+https://camp-planner.online/custom-event/?cp038

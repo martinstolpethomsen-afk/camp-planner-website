@@ -1,0 +1,13 @@
+CP-038 Activity Route Fix
+
+What changed:
+1. Kept the new activity pages from CP037.
+2. Added folder route aliases for all activity pages.
+3. Each activity page now exists as both:
+   - page-name.html
+   - page-name/index.html
+4. This makes GitHub Pages work with both direct .html links and clean folder URLs.
+5. Added ACTIVITY_PAGE_UPLOAD_CHECK.txt for upload verification.
+
+Important:
+If the .html URLs still show 404 after upload, the new files were not uploaded to the GitHub root.
