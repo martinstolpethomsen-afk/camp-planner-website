@@ -1,0 +1,25 @@
+CP-037 Activity Subpages
+
+What changed:
+1. Added differentiated activity subpages:
+   - martial-arts-events.html
+   - racket-sport-events.html
+   - football-events.html
+   - team-sport-events.html
+   - performance-events.html
+   - custom-event.html
+2. Updated frontpage event cards to link to the new pages.
+3. Added activity page navigation section to platform.html.
+4. Each activity page has its own theme, copy, workflow and CTA.
+5. Preserved HubSpot launch list form, pilot form and Book Demo calendar booking.
+
+Test:
+https://camp-planner.online/martial-arts-events.html?cp037
+https://camp-planner.online/racket-sport-events.html?cp037
+https://camp-planner.online/football-events.html?cp037
+https://camp-planner.online/team-sport-events.html?cp037
+https://camp-planner.online/performance-events.html?cp037
+https://camp-planner.online/custom-event.html?cp037
+
+Confirm:
+Frontpage cards should link to these pages.

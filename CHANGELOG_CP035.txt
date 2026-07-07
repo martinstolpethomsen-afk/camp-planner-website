@@ -1,0 +1,15 @@
+CP-035 Book Demo Cleanup
+
+What changed:
+1. Removed old CP-022 / topbar repair guide text from book-demo.html.
+2. Removed duplicated/old booking sections and placeholders from book-demo.html.
+3. Removed duplicated HubSpot meeting scripts.
+4. Reinserted one clean HubSpot meeting booking section.
+5. Removed public _CP*_READ_ME_FIRST files and old changelog files from the ZIP root.
+6. Kept Book Demo links pointing to book-demo.html#book-demo-calendar.
+
+Test:
+https://camp-planner.online/book-demo.html?cp035#book-demo-calendar
+
+Confirm source:
+Search for CP035_BOOK_DEMO_CLEANUP

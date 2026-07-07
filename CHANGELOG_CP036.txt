@@ -1,0 +1,21 @@
+CP-036 Front Launch List HubSpot Fix
+
+What changed:
+1. Replaced the frontpage Join Launch List HubSpot placeholder.
+2. Inserted the provided HubSpot embed code on index.html.
+3. Kept Pilot Program form on pilot-program.html.
+4. Kept Book Demo calendar booking on book-demo.html.
+5. Added frontpage HubSpot form styling.
+
+HubSpot embed used:
+- Portal ID: 148813068
+- Region: eu1
+- Form ID: d012533c-b290-451e-82f1-d6ed3560284f
+
+Test:
+https://camp-planner.online/?cp036
+https://camp-planner.online/pilot-program.html?cp036
+https://camp-planner.online/book-demo.html?cp036#book-demo-calendar
+
+Confirm source:
+Search for CP036_FRONT_LAUNCH_LIST_HUBSPOT_FIX
