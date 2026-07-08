@@ -1,0 +1,22 @@
+CP-039 Pricing + Language Foundation
+
+What changed:
+1. Added pricing.html and pricing/index.html.
+2. Added Pricing to the main header navigation.
+3. Added compact language switcher: EN / DA / DE.
+4. Added Danish foundation page at /da/.
+5. Added German foundation page at /de/.
+6. Added pricing teaser on the frontpage.
+7. Added pricing CTA to activity pages.
+8. Kept HubSpot Launch List, Pilot Program form and Book Demo booking.
+9. Kept the working real-logo sticky header style.
+
+Test:
+https://camp-planner.online/pricing.html?cp039
+https://camp-planner.online/pricing/?cp039
+https://camp-planner.online/da/?cp039
+https://camp-planner.online/de/?cp039
+https://camp-planner.online/?cp039
+
+Confirm:
+Search page source for CP039_PRICING_LANGUAGE_FOUNDATION.
