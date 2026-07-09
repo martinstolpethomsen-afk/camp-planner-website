@@ -1,0 +1,20 @@
+CP042_DEDICATED_EN_SOLUTIONS_PAGE_FIX
+
+Problem:
+- Solutions navigation could still jump to the DK route.
+
+Hard fix:
+- Created a real English /solutions.html page.
+- Created /solutions/ route.
+- Replaced all Solutions menu links with /solutions.html.
+- No more /#solutions anchor dependency.
+- DK remains isolated at /dk/ only.
+- English root remains /.
+- Login/app remains https://camp-planner.dk.
+
+Preserved:
+- CP039 visual story and videos.
+- CP041 absolute route logic.
+- HubSpot pilot form.
+- HubSpot booking calendar.
+- Header/logo styling.

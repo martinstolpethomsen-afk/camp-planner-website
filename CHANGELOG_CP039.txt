@@ -1,22 +1,25 @@
-CP-039 Pricing + Language Foundation
+CP039_VISUAL_STORY_UPDATE
 
-What changed:
-1. Added pricing.html and pricing/index.html.
-2. Added Pricing to the main header navigation.
-3. Added compact language switcher: EN / DA / DE.
-4. Added Danish foundation page at /da/.
-5. Added German foundation page at /de/.
-6. Added pricing teaser on the frontpage.
-7. Added pricing CTA to activity pages.
-8. Kept HubSpot Launch List, Pilot Program form and Book Demo booking.
-9. Kept the working real-logo sticky header style.
+Base:
+- CP038_ACTIVITY_ROUTE_FIX_VALIDATED.zip
 
-Test:
-https://camp-planner.online/pricing.html?cp039
-https://camp-planner.online/pricing/?cp039
-https://camp-planner.online/da/?cp039
-https://camp-planner.online/de/?cp039
-https://camp-planner.online/?cp039
+Added:
+- assets/images/campaign/
+- assets/videos/
+- New frontpage section: From chaos to control
+- Video snippets on the frontpage
+- Football page visual/video update
+- New Basketball Camps page and route
+- Basketball card on frontpage activity grid
+- Folder route redirects preserved/added
 
-Confirm:
-Search page source for CP039_PRICING_LANGUAGE_FOUNDATION.
+Important storytelling rule:
+- Before/chaos visuals should not show Camp-Planner branding.
+- After/solution visuals may show Camp-Planner and product visuals.
+
+Validation:
+- HubSpot pilot form preserved.
+- HubSpot meeting booking preserved.
+- CP032 real logo sticky header preserved.
+- camp-planner.dk login preserved.
+- Footer owner/legal preserved.

@@ -1,0 +1,21 @@
+CP040_ENGLISH_DEFAULT_LANGUAGE_FIX
+
+Base:
+- CP039_VISUAL_STORY_UPDATE_VALIDATED.zip
+
+Fixed:
+- Root domain is forced to English default.
+- CNAME is set to camp-planner.online.
+- Added EN/DK language switch in the header.
+- Added /en/ route redirecting to English root.
+- Added /dk/ route as non-default Danish information page.
+- Login/app still points to https://camp-planner.dk.
+- Removed accidental root-to-DK meta refresh if present.
+
+Validation:
+- index.html language is English.
+- index.html has no DK redirect.
+- /dk/index.html exists.
+- /en/index.html exists.
+- HubSpot pilot + demo preserved.
+- CP039 visual story preserved.

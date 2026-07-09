@@ -1,0 +1,22 @@
+CP041_SOLUTIONS_EN_ROUTE_FIX
+
+Problem:
+- The Solutions navigation could resolve to the Danish route in some contexts.
+
+Fix:
+- All English navigation links now use absolute root paths.
+- Solutions now points to /#solutions.
+- Features now points to /#features.
+- EN language switch points to /.
+- DK language switch points to /dk/ only.
+- /en/ redirects to /.
+- Activity folder redirects use absolute English targets.
+- DK page remains non-default and links back to English root.
+- Any accidental DK auto-redirect in script.js is neutralized.
+
+Preserved:
+- CP039 visual story update.
+- HubSpot pilot form.
+- HubSpot booking calendar.
+- CP032/CP038 header/logo styling.
+- Login/app link to https://camp-planner.dk.
