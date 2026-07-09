@@ -1,0 +1,18 @@
+CP043_NO_LANGUAGE_SWITCH_FIXED_EN_LINKS
+
+Fix:
+- Removed EN/DK switch from headers.
+- Home/logo links point to /index.html.
+- Solutions links point to /solutions.html.
+- Features links point to /index.html#features.
+- /en/, /dk/, /da/ and /de/ redirect to /index.html.
+- /solutions/ redirects to /solutions.html.
+- Added 404.html redirect to /index.html.
+- Login/app still points to https://camp-planner.dk.
+
+Preserved:
+- Dedicated English Solutions page.
+- CP039 visuals/videos.
+- HubSpot pilot form.
+- HubSpot booking calendar.
+- Footer/legal owner details.

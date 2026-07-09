@@ -3183,3 +3183,8 @@ header[data-cp-version="031"]{
     padding-top:132px;
   }
 }
+
+
+/* CP043_NO_LANGUAGE_SWITCH_FIXED_EN_LINKS */
+.cp040-lang-switch{display:none!important}
+.cp31-header[data-cp-version="043"] .cp31-nav a[href="/solutions.html"]{opacity:.95}
