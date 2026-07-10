@@ -1,0 +1,28 @@
+CP048_FULL_LOCAL_FRONT_PAGES
+
+Base:
+- CP047_LOCAL_LANGUAGE_LANDING_PAGES
+
+Reason:
+- CP047 local pages were too thin and missed important frontpage sections.
+
+Improved:
+- /da/, /de/, /sv/, /no/ now have fuller local front pages:
+  - Hero
+  - Trust logos
+  - Chaos-to-control
+  - Feature grid
+  - Event type grid
+  - Workflow section
+  - Founder/why section
+  - Launch CTA
+- /dk/ redirects to /da/
+- /en/ redirects to /index.html
+- /nb/ redirects to /no/
+- Language switch preserved: EN / DA / DE / SV / NO
+
+Preserved:
+- English master site
+- CP046 image fixes
+- HubSpot booking and pilot form
+- Login/app link to https://camp-planner.dk
