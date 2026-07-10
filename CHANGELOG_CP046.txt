@@ -1,0 +1,12 @@
+CP046_IMAGE_PATH_AND_FRONT_CARD_FIX
+
+Fixes:
+- Frontpage missing images fixed.
+- Images placed in both:
+  - assets/images/campaign/
+  - assets/images/
+- Frontpage image paths use /assets/images/campaign/... plus CSS background fallback.
+- Alt text removed from visual cards to avoid visible fallback text.
+- Event grid rebuilt: no Performance Events, Your Event as 6th card.
+- Launch List remains vertical with text on top and HubSpot form below.
+- English-only fixed navigation preserved.
