@@ -3188,3 +3188,131 @@ header[data-cp-version="031"]{
 /* CP043_NO_LANGUAGE_SWITCH_FIXED_EN_LINKS */
 .cp040-lang-switch{display:none!important}
 .cp31-header[data-cp-version="043"] .cp31-nav a[href="/solutions.html"]{opacity:.95}
+
+
+/* CP044_FRONT_PAGE_CLEANUP_LIGHT_VISUALS */
+.cp044-teaser{
+  width:min(1180px,calc(100% - 40px));
+  margin:0 auto;
+  padding:96px 0 84px;
+  display:grid;
+  grid-template-columns:.86fr 1.14fr;
+  gap:34px;
+  align-items:center;
+}
+.cp044-teaser h2{
+  font-size:clamp(36px,5vw,68px);
+  line-height:.96;
+  letter-spacing:-.055em;
+  margin:8px 0 18px;
+  color:#07111d;
+}
+.cp044-teaser p{
+  font-size:18px;
+  color:#475467;
+  max-width:620px;
+}
+.cp044-before-after{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.cp044-before-after figure{
+  margin:0;
+  position:relative;
+  overflow:hidden;
+  border-radius:28px;
+  background:#07111d;
+  box-shadow:0 24px 60px rgba(7,17,29,.16);
+  min-height:380px;
+}
+.cp044-before-after img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+}
+.cp044-before-after figure:first-child img{
+  filter:saturate(.92);
+}
+.cp044-before-after figcaption{
+  position:absolute;
+  left:16px;
+  right:16px;
+  bottom:16px;
+  padding:12px 14px;
+  border-radius:16px;
+  color:#fff;
+  font-weight:900;
+  font-size:14px;
+  background:rgba(7,17,29,.78);
+  border:1px solid rgba(255,255,255,.16);
+  backdrop-filter:blur(14px);
+}
+.cp044-solutions-story{
+  padding:96px 24px;
+  background:linear-gradient(180deg,#050910,#07111d);
+  color:#fff;
+}
+.cp044-story-head{
+  width:min(900px,100%);
+  margin:0 auto 38px;
+  text-align:center;
+}
+.cp044-story-head h2{
+  font-size:clamp(36px,5vw,64px);
+  line-height:.98;
+  margin:8px 0 16px;
+  letter-spacing:-.055em;
+}
+.cp044-story-head p{
+  max-width:760px;
+  margin:0 auto;
+  color:#cbd5e1;
+  font-size:18px;
+}
+.cp044-story-grid{
+  width:min(1180px,100%);
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+.cp044-story-card{
+  overflow:hidden;
+  border-radius:30px;
+  background:#0b1724;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 28px 80px rgba(0,0,0,.32);
+}
+.cp044-story-card img{
+  width:100%;
+  height:390px;
+  object-fit:cover;
+}
+.cp044-story-card div{
+  padding:24px 24px 28px;
+}
+.cp044-story-card span{
+  display:block;
+  color:#f3272b;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:12px;
+  margin-bottom:8px;
+}
+.cp044-story-card h3{
+  margin:0 0 8px;
+  color:#fff;
+  font-size:28px;
+  letter-spacing:-.035em;
+}
+.cp044-story-card p{
+  margin:0;
+  color:#d6deeb;
+}
+@media(max-width:940px){
+  .cp044-teaser,.cp044-story-grid{grid-template-columns:1fr}
+  .cp044-before-after{grid-template-columns:1fr}
+  .cp044-before-after img,.cp044-story-card img{height:320px}
+}

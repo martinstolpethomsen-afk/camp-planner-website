@@ -1,0 +1,21 @@
+CP044_FRONT_PAGE_CLEANUP_LIGHT_VISUALS
+
+Purpose:
+- Clean up the frontpage after CP039 became too heavy.
+- Use brighter visuals.
+- Reduce duplicate messaging.
+
+Changes:
+- Replaced the heavy frontpage “From chaos to control” video grid with a short premium teaser.
+- Moved full before/after storytelling to the Solutions page.
+- Updated Football page with brighter football visual.
+- Updated Basketball page with brighter basketball visual.
+- Removed HubSpot placeholder text.
+- Kept fixed English navigation from CP043.
+- Old /dk/, /da/, /de/ and /en/ routes still redirect to /index.html.
+
+Preserved:
+- HubSpot pilot form.
+- HubSpot booking calendar.
+- Login/app link to https://camp-planner.dk.
+- Footer/legal owner information.
