@@ -1,0 +1,3 @@
+CP047_LOCAL_LANGUAGE_LANDING_PAGES
+
+Added /da/, /de/, /sv/, /no/ local landing pages. /dk/ redirects to /da/. /en/ redirects to /index.html. /nb/ redirects to /no/.
