@@ -1,0 +1,10 @@
+CP045_FRONT_VISUAL_AND_EVENT_GRID_FIX
+
+Fixes:
+- New lighter images copied into assets/images/campaign/ and referenced with safer relative paths.
+- Rebuilt frontpage From chaos to control teaser so images show reliably.
+- Rebuilt Launch List section: headline/text on top, HubSpot form below.
+- Removed remaining HubSpot placeholder text.
+- Rebuilt event type grid: removed Performance Events and replaced with Your Event as the 6th card.
+- Preserved English-only fixed navigation.
+- Preserved HubSpot IDs and booking link.
