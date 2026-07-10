@@ -1,0 +1,21 @@
+CP049_LOCAL_FEATURE_GRID_PARITY_FIX
+
+Fix:
+- Local language front pages now match the English feature section structure.
+- /da/, /de/, /sv/, /no/ now have 8 feature cards instead of 6.
+- Layout fixed to 4x2 cards on desktop, same visual rhythm as English.
+- Added local translations for:
+  - CheckPoint
+  - Badges
+  - Accommodation / Overnatning
+  - Communication / Kommunikation
+- Preserved CP048 full local pages, language switch and redirects.
+
+Routes:
+- /da/
+- /de/
+- /sv/
+- /no/
+- /dk/ -> /da/
+- /en/ -> /index.html
+- /nb/ -> /no/
