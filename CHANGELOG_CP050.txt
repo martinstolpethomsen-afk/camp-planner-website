@@ -1,0 +1,13 @@
+CP050_ABOUT_US_PAGE
+
+Added:
+- /about-us.html
+- /da/about-us.html
+- /de/about-us.html
+- /sv/about-us.html
+- /no/about-us.html
+- /about.html redirects to /about-us.html
+- Header navigation changed from Founder to About us
+- Trine Kirkeby listed as CEO
+- Martin Stolpe-Thomsen listed as Founder & Product Vision
+- Localized About us pages in EN / DA / DE / SV / NO
