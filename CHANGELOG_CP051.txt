@@ -1,0 +1,20 @@
+CP051_ABOUT_IMAGES_AND_FRONT_CLEANUP
+
+Fix:
+- About us images made more robust.
+- About images included in both:
+  - assets/images/about/
+  - assets/images/
+- About us image tags now include onerror fallback.
+- About sections have CSS background fallback images.
+- Added /about-image-test.html to test direct image loading after upload.
+
+Frontpage cleanup:
+- Removed Founder/why personal block from front/local front pages.
+- Added a smaller product-neutral About us teaser instead.
+- Main personal story now belongs on /about-us.html.
+
+Preserved:
+- CP050 About us pages in EN / DA / DE / SV / NO.
+- CP049 local feature grid parity.
+- HubSpot and login links.

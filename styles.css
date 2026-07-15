@@ -3611,3 +3611,61 @@ header[data-cp-version="031"]{
 .cp050-values{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:96px 0}.cp050-values-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.cp050-values-grid article{background:#fff;border:1px solid #e7e9ef;border-radius:24px;padding:26px;box-shadow:0 18px 54px rgba(7,17,29,.08)}.cp050-values-grid h3{margin:0 0 10px;font-size:22px;line-height:1.12;letter-spacing:-.035em}.cp050-values-grid p{margin:0;font-size:15px;color:#667085}
 .cp050-about-cta{width:min(1180px,calc(100% - 40px));margin:0 auto 96px;display:grid;grid-template-columns:1fr .72fr;gap:34px;align-items:center;padding:38px;border-radius:34px;background:radial-gradient(circle at 92% 8%,rgba(255,255,255,.10),transparent 25%),linear-gradient(135deg,#07111d,#9b0f17);color:#fff;box-shadow:0 30px 90px rgba(7,17,29,.20)}.cp050-about-cta h2,.cp050-about-cta p{color:#fff}.cp050-about-cta p{color:#e4eaf3}.cp050-about-cta img{width:100%;height:430px;object-fit:cover;border-radius:26px;border:1px solid rgba(255,255,255,.14)}
 @media(max-width:1120px){.cp050-values-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:900px){.cp050-about-hero,.cp050-about-intro,.cp050-profile-card,.cp050-profile-card.cp050-profile-trine,.cp050-about-cta{grid-template-columns:1fr}.cp050-about-hero-copy{justify-self:start}.cp050-about-hero-image img,.cp050-profile-image img,.cp050-profile-image{min-height:340px;height:340px}.cp050-profile-card.cp050-profile-trine .cp050-profile-copy{order:2}.cp050-profile-card.cp050-profile-trine .cp050-profile-image{order:1}}@media(max-width:640px){.cp050-values-grid{grid-template-columns:1fr}.cp050-about-hero{padding-top:128px}.cp050-profile-card,.cp050-about-cta{padding:22px}}
+
+
+/* CP051_ABOUT_IMAGES_AND_FRONT_CLEANUP */
+.cp050-about-hero-image{
+  background-image:url('/assets/images/about/about-hero.jpg'),url('/assets/images/about-hero.jpg');
+  background-size:cover;
+  background-position:center;
+}
+.cp050-profile-martin .cp050-profile-image{
+  background-image:url('/assets/images/about/founders-real.jpg'),url('/assets/images/founders-real.jpg');
+  background-size:cover;
+  background-position:center;
+}
+.cp050-profile-trine .cp050-profile-image{
+  background-image:url('/assets/images/about/trine-ceo.jpg'),url('/assets/images/trine-ceo.jpg');
+  background-size:cover;
+  background-position:center;
+}
+.cp050-about-cta{
+  background-image:
+    radial-gradient(circle at 92% 8%,rgba(255,255,255,.10),transparent 25%),
+    linear-gradient(135deg,#07111d,#9b0f17);
+}
+.cp051-about-img{
+  display:block;
+}
+.cp051-about-teaser{
+  width:min(1180px,calc(100% - 40px));
+  margin:80px auto;
+  padding:34px;
+  border-radius:30px;
+  background:#fff;
+  border:1px solid #e7e9ef;
+  box-shadow:0 24px 70px rgba(7,17,29,.09);
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:28px;
+  align-items:center;
+}
+.cp051-about-teaser h2{
+  margin:6px 0 10px;
+  font-size:clamp(34px,4.4vw,58px);
+  line-height:1;
+  letter-spacing:-.055em;
+  color:#07111d;
+}
+.cp051-about-teaser p{
+  margin:0;
+  max-width:760px;
+  color:#475467;
+  font-size:18px;
+}
+@media(max-width:760px){
+  .cp051-about-teaser{
+    grid-template-columns:1fr;
+    padding:26px;
+  }
+}
