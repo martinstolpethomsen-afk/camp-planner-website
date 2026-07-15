@@ -1,0 +1,15 @@
+CP053_TRINE_PRIVATE_IMAGE_UPDATE
+
+Base:
+- CP052_COMPLETE_ABOUT_FLIP_CARDS_PACKAGE
+
+Update:
+- Replaced Trine private/sport flip-card image with the approved boxing stance image:
+  assets/images/about/trine-sport.png
+
+Preserved:
+- About us flip-card layout
+- Martin images
+- Hero image
+- Local About us pages
+- HubSpot and login links
