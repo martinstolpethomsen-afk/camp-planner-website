@@ -1,0 +1,15 @@
+CP052_COMPLETE_ABOUT_FLIP_CARDS_PACKAGE
+
+Base:
+- CP051_ABOUT_IMAGES_AND_FRONT_CLEANUP
+
+Fixes:
+- About us hero now uses a clean image without text in the image.
+- Martin professional image updated to the supplied frontpage image.
+- Martin sport image updated to the slimmed dojo/grappling image.
+- Trine profile updated with professional and sport/private flip-card imagery.
+- About us profile sections are now flip cards:
+  - Professional side
+  - Private / sport side
+- Local About us pages updated for DA / DE / SV / NO.
+- Complete package with all website files and assets included.

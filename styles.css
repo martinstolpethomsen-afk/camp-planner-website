@@ -3669,3 +3669,121 @@ header[data-cp-version="031"]{
     padding:26px;
   }
 }
+
+
+/* CP052_COMPLETE_ABOUT_FLIP_CARDS_PACKAGE */
+.cp052-about-hero .cp050-about-hero-image{
+  background-image:url('/assets/images/about/hero-couple.png');
+  background-size:cover;
+  background-position:center;
+}
+.cp052-about-hero .cp050-about-hero-image img{
+  height:620px;
+  object-position:center top;
+}
+.cp052-profile-grid{
+  gap:34px;
+}
+.cp052-person-card{
+  background:#fff;
+  border:1px solid #e7e9ef;
+  border-radius:34px;
+  padding:28px;
+  box-shadow:0 28px 84px rgba(7,17,29,.10);
+  display:grid;
+  grid-template-columns:.92fr 1.08fr;
+  gap:34px;
+  align-items:center;
+}
+.cp052-person-card-trine{
+  grid-template-columns:1.08fr .92fr;
+}
+.cp052-profile-copy{
+  padding:10px 8px;
+}
+.cp052-flip-wrap{
+  perspective:1600px;
+}
+.cp052-flip-card{
+  position:relative;
+  min-height:540px;
+  transform-style:preserve-3d;
+  transition:transform .8s cubic-bezier(.2,.7,.2,1);
+}
+.cp052-flip-wrap:hover .cp052-flip-card,
+.cp052-flip-wrap:focus-within .cp052-flip-card{
+  transform:rotateY(180deg);
+}
+.cp052-flip-face{
+  position:absolute;
+  inset:0;
+  border-radius:28px;
+  overflow:hidden;
+  background:#07111d;
+  backface-visibility:hidden;
+  box-shadow:0 24px 60px rgba(7,17,29,.18);
+}
+.cp052-flip-face img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+.cp052-back-face{
+  transform:rotateY(180deg);
+}
+.cp052-flip-badge{
+  position:absolute;
+  left:18px;
+  bottom:18px;
+  display:grid;
+  gap:4px;
+  max-width:72%;
+  padding:14px 16px;
+  border-radius:18px;
+  background:rgba(7,17,29,.78);
+  backdrop-filter:blur(8px);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.12);
+}
+.cp052-flip-badge strong{
+  font-size:13px;
+  line-height:1;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#ff4757;
+}
+.cp052-flip-badge span{
+  font-size:14px;
+  line-height:1.35;
+  color:#eef2f7;
+}
+@media(max-width:900px){
+  .cp052-person-card,
+  .cp052-person-card-trine{
+    grid-template-columns:1fr;
+  }
+  .cp052-person-card-trine .cp052-profile-copy{
+    order:2;
+  }
+  .cp052-person-card-trine .cp052-flip-wrap{
+    order:1;
+  }
+  .cp052-flip-card{
+    min-height:420px;
+  }
+  .cp052-about-hero .cp050-about-hero-image img{
+    height:420px;
+  }
+}
+@media(max-width:640px){
+  .cp052-person-card{
+    padding:22px;
+  }
+  .cp052-flip-card{
+    min-height:360px;
+  }
+  .cp052-flip-badge{
+    max-width:84%;
+  }
+}
