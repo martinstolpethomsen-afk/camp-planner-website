@@ -1,0 +1,5 @@
+CP055_DATA_PRIVACY_GDPR_SECTION
+- Added Data & Privacy / GDPR pages in EN, DA, DE, SV and NO.
+- Covers GitHub, Vercel, Supabase and One.com.
+- Adds GDPR principles, data categories, responsibility model and launch-readiness note.
+- Footer now links to Data & Privacy.

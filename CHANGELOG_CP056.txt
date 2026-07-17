@@ -1,0 +1,27 @@
+CP056_LEGAL_DOCUMENTS_GDPR_PACKAGE
+
+Base:
+- CP055_DATA_PRIVACY_GDPR_SECTION
+
+Added legal/compliance documents:
+- /legal/
+- /legal/privacy-policy.html
+- /legal/cookie-policy.html
+- /legal/dpa.html
+- /legal/subprocessors.html
+- /legal/retention-security.html
+
+Localized versions:
+- /da/legal/
+- /de/legal/
+- /sv/legal/
+- /no/legal/
+
+Also:
+- Root redirects for privacy-policy.html, cookie-policy.html, dpa.html and subprocessors.html.
+- Footer links updated with Legal & Privacy.
+- Black logo background integrated into assets/logos/logo-dark.png.
+- Draft disclaimer included on legal pages.
+
+Important:
+- These are professional operational drafts and must be legally reviewed before commercial launch.

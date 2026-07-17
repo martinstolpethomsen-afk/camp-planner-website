@@ -1,0 +1,22 @@
+CP057_ACTIVITY_HERO_CONTRAST_FIX
+
+Base:
+- CP056_LEGAL_DOCUMENTS_GDPR_PACKAGE
+
+Fix:
+- Basketball event page hero text was unreadable because white text sat on a very light background.
+- Added activity-page contrast overlay and dark glass text panel.
+- Applied to all activity event pages to prevent the same issue:
+  - basketball-events.html
+  - football-events.html
+  - martial-arts-events.html
+  - racket-sport-events.html
+  - team-sport-events.html
+  - custom-event.html
+  - performance-events.html
+
+Preserved:
+- CP056 legal/GDPR pages
+- CP053 About us flip-card updates
+- Black logo background
+- HubSpot and login links
