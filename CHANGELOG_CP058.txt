@@ -1,0 +1,19 @@
+CP058_HARD_ACTIVITY_CONTRAST_AND_BUILD_STAMP
+
+Base:
+- CP057_ACTIVITY_HERO_CONTRAST_FIX
+
+Fix:
+- CP057 did not hit the correct activity hero structure on basketball.
+- Basketball and other activity pages use .cp037-hero / .cp037-hero-copy.
+- Added hard CSS contrast override for .cp037-hero and .cp037-hero-copy.
+- Basketball page gets extra forced dark hero background and overlay.
+
+New standard:
+- Added visible build/iteration stamp at the bottom of every HTML page:
+  Build CP058
+
+Also:
+- Cleaned duplicate Legal & Privacy footer links where present.
+- Preserved CP056 legal/GDPR pages.
+- Preserved About us flip cards and Trine image update.

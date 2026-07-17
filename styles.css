@@ -3903,3 +3903,113 @@ header[data-cp-version="031"]{
     background:linear-gradient(180deg, rgba(5,9,16,.94), rgba(5,9,16,.76));
   }
 }
+
+
+/* CP058_HARD_ACTIVITY_CONTRAST_AND_BUILD_STAMP */
+/* Hard fix: CP037 sport pages use .cp037-hero/.cp037-hero-copy, not only CP039 classes. */
+.cp058-activity-page .cp037-hero{
+  position:relative!important;
+  overflow:hidden!important;
+  background:
+    linear-gradient(135deg,#050910 0%,#07111d 52%,#17070a 100%)!important;
+  color:#fff!important;
+}
+
+.cp058-activity-page .cp037-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,.97) 0%,
+      rgba(0,0,0,.91) 31%,
+      rgba(0,0,0,.62) 52%,
+      rgba(0,0,0,.20) 78%,
+      rgba(0,0,0,.08) 100%),
+    radial-gradient(circle at 11% 16%, rgba(243,39,43,.24), transparent 28%)!important;
+}
+
+.cp058-activity-page .cp037-hero > *{
+  position:relative!important;
+  z-index:1!important;
+}
+
+.cp058-activity-page .cp037-hero-copy{
+  background:linear-gradient(135deg, rgba(5,9,16,.92), rgba(5,9,16,.58))!important;
+  border:1px solid rgba(255,255,255,.14)!important;
+  border-radius:30px!important;
+  padding:34px!important;
+  box-shadow:0 26px 80px rgba(0,0,0,.34)!important;
+  backdrop-filter:blur(8px)!important;
+}
+
+.cp058-activity-page .cp037-hero h1{
+  color:#fff!important;
+  opacity:1!important;
+  text-shadow:0 4px 30px rgba(0,0,0,.70)!important;
+}
+
+.cp058-activity-page .cp037-hero p:not(.eyebrow){
+  color:#f0f4fa!important;
+  opacity:1!important;
+  text-shadow:0 3px 18px rgba(0,0,0,.65)!important;
+}
+
+.cp058-activity-page .cp037-hero .eyebrow,
+.cp058-activity-page .cp037-hero .eyebrow.red{
+  color:#ff3b42!important;
+  opacity:1!important;
+  text-shadow:0 2px 12px rgba(0,0,0,.75)!important;
+}
+
+.cp058-activity-page .cp037-hero-visual{
+  box-shadow:0 30px 90px rgba(0,0,0,.42)!important;
+}
+
+/* Extra basketball override: this is the page from the screenshot. */
+.cp058-basketball-page .cp037-theme-basketball .cp037-hero,
+.cp058-basketball-page .cp037-hero{
+  background:
+    linear-gradient(135deg,#050910 0%,#07111d 48%,#25080d 100%)!important;
+}
+
+.cp058-basketball-page .cp037-hero::before{
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,.98) 0%,
+      rgba(0,0,0,.94) 35%,
+      rgba(0,0,0,.66) 58%,
+      rgba(0,0,0,.22) 82%,
+      rgba(0,0,0,.10) 100%),
+    radial-gradient(circle at 8% 18%, rgba(243,39,43,.27), transparent 30%)!important;
+}
+
+/* Visible iteration number on every page from CP058 onward */
+.cp-build-stamp{
+  width:100%;
+  box-sizing:border-box;
+  padding:10px 18px 12px;
+  text-align:right;
+  font-size:11px;
+  line-height:1;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#8b95a7;
+  background:#020611;
+  border-top:1px solid rgba(255,255,255,.08);
+  font-weight:800;
+}
+
+@media(max-width:900px){
+  .cp058-activity-page .cp037-hero::before{
+    background:linear-gradient(180deg, rgba(0,0,0,.95), rgba(0,0,0,.72))!important;
+  }
+  .cp058-activity-page .cp037-hero-copy{
+    padding:24px!important;
+  }
+  .cp-build-stamp{
+    text-align:center;
+  }
+}
