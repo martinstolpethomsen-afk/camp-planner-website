@@ -181,6 +181,8 @@
 .demo-booking-card p:not(.eyebrow){margin:0;color:#667085}
 .demo-booking-card .btn{width:100%;margin-top:4px}
 .demo-booking-card small{color:#667085;text-align:center}
+.legal-doc-grid article{display:flex;flex-direction:column}
+.legal-doc-grid article .btn{align-self:flex-start;margin-top:auto}
 .partner-logos .partner-logo:hover{opacity:1;filter:grayscale(0);transform:translateY(-2px)}
 .newsletter-section{padding:90px 22px;background:#fff}
 .newsletter-card{width:min(1180px,100%);margin:0 auto;display:grid;grid-template-columns:1fr 440px;gap:42px;align-items:center;background:radial-gradient(circle at 15% 20%,rgba(243,39,43,.18),transparent 28%),linear-gradient(135deg,#07111d,#111827 52%,#8f151a);color:#fff;border-radius:34px;padding:54px;box-shadow:var(--shadow);overflow:hidden;position:relative}
