@@ -14,6 +14,10 @@
   <url><loc>https://camp-planner.online/custom-event.html</loc><priority>0.6</priority></url>
   <url><loc>https://camp-planner.online/data-privacy.html</loc><priority>0.4</priority></url>
   <url><loc>https://camp-planner.online/legal/</loc><priority>0.4</priority></url>
+  <url><loc>https://camp-planner.online/legal/privacy-policy.html</loc><priority>0.4</priority></url>
+  <url><loc>https://camp-planner.online/legal/cookie-policy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://camp-planner.online/legal/subprocessors.html</loc><priority>0.3</priority></url>
+  <url><loc>https://camp-planner.online/legal/terms.html</loc><priority>0.3</priority></url>
   <url><loc>https://camp-planner.online/da/</loc><priority>0.7</priority></url>
   <url><loc>https://camp-planner.online/de/</loc><priority>0.7</priority></url>
   <url><loc>https://camp-planner.online/sv/</loc><priority>0.7</priority></url>

@@ -3,7 +3,10 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/privacy-policy.html", "destination": "/data-privacy.html", "permanent": true }
+    { "source": "/privacy-policy.html", "destination": "/legal/privacy-policy.html", "permanent": true },
+    { "source": "/cookie-policy.html", "destination": "/legal/cookie-policy.html", "permanent": true },
+    { "source": "/dpa.html", "destination": "/legal/dpa.html", "permanent": true },
+    { "source": "/subprocessors.html", "destination": "/legal/subprocessors.html", "permanent": true }
   ],
   "headers": [
     {
@@ -17,7 +20,9 @@
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" }
       ]
     }
   ]
