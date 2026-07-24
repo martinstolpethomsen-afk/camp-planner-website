@@ -5,6 +5,12 @@
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/privacy-policy.html", "destination": "/data-privacy.html", "permanent": true }
   ],
+  "rewrites": [
+    {
+      "source": "/:publicSlug([a-z0-9-]+_[a-z0-9-]+)",
+      "destination": "https://camp-planner.dk/:publicSlug"
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
