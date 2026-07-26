@@ -8,6 +8,12 @@
     { "source": "/dpa.html", "destination": "/legal/dpa.html", "permanent": true },
     { "source": "/subprocessors.html", "destination": "/legal/subprocessors.html", "permanent": true }
   ],
+  "rewrites": [
+    {
+      "source": "/:publicSlug([a-z0-9-]+_[a-z0-9-]+)",
+      "destination": "https://camp-planner.dk/:publicSlug"
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
