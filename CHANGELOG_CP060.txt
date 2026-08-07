@@ -1,0 +1,29 @@
+CP060_COOKIE_BANNER_AND_MARTIN_TEACHING_IMAGE
+
+Base:
+- Latest available CP059/CP058 package
+
+Updates:
+- Replaced Martin sport/private About us image:
+  assets/images/about/martin-sport.png
+  assets/images/about/martin-teaching-large-group.png
+
+- Added cookie consent banner site-wide:
+  Necessary only
+  Accept all
+  Links to:
+    /legal/cookie-policy.html
+    /legal/privacy-policy.html
+
+- Added localStorage-based consent memory:
+  campPlannerCookieConsent
+
+- Updated all visible build stamps to:
+  Build CP060
+
+Preserved:
+- Legal/GDPR pages
+- About us flip-card structure
+- Basketball/activity contrast fix
+- HubSpot demo and pilot forms
+- Black logo background
