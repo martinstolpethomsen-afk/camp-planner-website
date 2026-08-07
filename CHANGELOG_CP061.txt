@@ -1,9 +1,0 @@
-CP061_FRONT_PAGE_MATURITY_AND_MOBILE_FIX
-
-- Matured and simplified the front page.
-- Added mobile menu burger and open/close behaviour.
-- Unified primary CTA: Request a product walkthrough.
-- Replaced old feature/workflow repetition with three product flows: Before / During / After.
-- Added live event scenario.
-- Preserved cookie banner, legal/GDPR pages, About us flip cards, activity contrast fix, HubSpot links and black logo.
-- Build stamp: Build CP061.
