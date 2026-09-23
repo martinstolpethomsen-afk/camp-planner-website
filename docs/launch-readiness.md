@@ -26,21 +26,40 @@ retain localized link text on local pages, with `hreflang="en"` and localized ti
 Pricing links deliberately point to `/index.html#pricing`; localized homepages also
 contain the translated launch offer.
 
-## Feature readiness
+## Version 1 readiness (corrected 23 September 2026)
 
-The marketing repository contains descriptions and mockups, not production code,
-acceptance-test evidence or a signed-off launch feature list. Therefore these
-capabilities are conservatively **Coming soon** (localized on local pages): event
-setup, registration, automated scheduling, people/venue management, SMS, push,
-CheckPoint/QR check-in, badges, accommodation, finance/reporting, LiveBoard,
-instant updates, participant mobile views and communications.
+The product owner confirmed that Camp-Planner version 1 is ready for use. The
+previous blanket Coming soon labels were incorrect: missing evidence in the
+marketing repository was not evidence that the product lacked these features.
 
-API, SSO and custom integrations remain **Planned**, as in the existing roadmap.
-Club, Federation and Enterprise remain non-binding product directions. Their matrix
-cells say Planned rather than Included. Nothing is marked Available at launch.
-CheckPoint and badges are not asserted to be included, and their commercial module
-packaging is not invented. Confirm production readiness, scope and module pricing
-before changing the central statuses. Record evidence in `featureStatus` first.
+Status is now cross-checked against the application's main commit
+`b190942e5a0518197ca35c6f82cb56ebb2b479f0`, especially `docs/FUNCTION_MATRIX.md`
+(17 September 2026), `docs/USER_GUIDE.md` and the actual module implementations.
+Source references are recorded for each capability in `content/launch.json`.
+
+Active version 1 features: event setup, registration, scheduling, participants,
+instructors, volunteers, areas, check-in/QR, badge printing, accommodation,
+finance/exports/feedback, LiveBoard and responsive public schedule views. Active
+cards have no Coming soon badge; the pricing matrix identifies version 1 features.
+Module access still depends on organization configuration, event type and roles.
+
+Keep the documented scope precise:
+- Check-in is online, without offline queuing or instant synchronization between stations.
+- Badge printing uses event printing profiles and the operating system print dialog;
+  do not invent a separate Badge Studio design product.
+- Mobile views show published schedules; do not promise a personalized schedule.
+- Planning automation supports the existing Training/Meeting templates.
+- Event finance does not automatically reconcile external payment providers.
+- Communication Hub is planned; SMS and Web Push are later adapters, per
+  `docs/COMMUNICATION_HUB_V1_SPEC.md`. Existing invitations/email functions do not
+  imply a complete automated communications module or bulk thank-you delivery.
+- API, SSO and custom integrations, plus Club/Federation/Enterprise plans, remain
+  future product directions. Version 1 readiness does not assert those are included.
+
+Selected application regression checks passed: check-in (24 required scenarios),
+schedule grid/drag-and-drop, accommodation save and registration guardrails. These
+are repository checks, not a new full production acceptance test. No app files,
+databases or deployments were modified by this marketing correction.
 
 ## HubSpot actions outside this repository
 
