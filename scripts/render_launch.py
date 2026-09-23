@@ -152,6 +152,24 @@ for path in sorted(ROOT.rglob('*.html')):
         card['data-feature']=key
         if existing: existing.decompose()
         card.append(status_badge(soup,key,t))
+    # One icon family and card structure for every language homepage.
+    if is_home:
+        section = soup.select_one('#features')
+        section['class'] = ['section', 'white', 'cp049-local-features']
+        section.select_one('.feature-grid')['class'] = ['feature-grid', 'cp049-feature-grid']
+        for card in section.select('.feature-card'):
+            if card.select_one('img[src*="event-planning"]'):
+                card['data-feature'] = 'eventSetup'
+            if card.h3.get_text(strip=True) == 'Schema':
+                card['data-feature'] = 'scheduling'
+            key = card['data-feature']
+            for old in card.select('.cp049-feature-icon, .icon-symbol, .cp-feature-icon'):
+                old.decompose()
+            for old in card.find_all('img', recursive=False):
+                old.decompose()
+            card['class'] = ['feature-card', 'reveal', 'cp049-feature-card']
+            icon = fragment(f'<div class="cp-feature-icon" aria-hidden="true"><img src="/assets/icons/features/{key}.svg" alt="" width="56" height="56" loading="lazy" decoding="async"></div>').div
+            card.insert(0, icon)
     for card in soup.select('.feature-card'):
         badge=card.select_one('[data-feature="communications"]')
         if badge:
