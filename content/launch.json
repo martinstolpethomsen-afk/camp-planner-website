@@ -25,8 +25,8 @@
       "experience": "Built from real experience with camps, seminars and international sports events.",
       "soon": "Coming soon",
       "planned": "Planned",
-      "statusTitle": "Product preview",
-      "status": "The workflows and features shown are planned capabilities. Availability for your event will be confirmed during a demo or pilot onboarding; they are not a promise of availability at launch.",
+      "statusTitle": "Camp-Planner version 1",
+      "status": "Version 1 is ready to use for planning and running your sports events.",
       "priceHeadline": "No subscription. Pay only for registered participants.",
       "price": "€2* per registered participant",
       "support": "The launch price applies to events with up to 100 registered participants. Planning a larger event? Contact us for individual pricing.",
@@ -59,7 +59,9 @@
       "policy": "Read our cookie policy",
       "decline": "Continue without",
       "allow": "Allow external services",
-      "cookieSettings": "Cookie settings"
+      "cookieSettings": "Cookie settings",
+      "available": "Available in version 1",
+      "workflowIntro": "Create your event, build the plan and run the event in one workflow."
     },
     "da": {
       "label": "LANCERES 1. NOVEMBER 2026",
@@ -79,8 +81,8 @@
       "experience": "Bygget på praktisk erfaring med camps, seminarer og internationale sportsevents.",
       "soon": "Kommer snart",
       "planned": "Planlagt",
-      "statusTitle": "Forhåndsvisning af produktet",
-      "status": "De viste arbejdsgange og funktioner er planlagte muligheder. Tilgængeligheden for dit event bekræftes ved en demo eller opstart af et pilotforløb; de er ikke et løfte om tilgængelighed ved lancering.",
+      "statusTitle": "Camp-Planner version 1",
+      "status": "Version 1 er klar til brug til planlægning og afvikling af dine sportsevents.",
       "priceHeadline": "Intet abonnement. Betal kun for tilmeldte deltagere.",
       "price": "€2* pr. tilmeldt deltager",
       "support": "Launchprisen gælder events med op til 100 tilmeldte deltagere. Planlægger du et større event, kan du kontakte os for en individuel pris.",
@@ -113,7 +115,9 @@
       "policy": "Læs vores cookiepolitik",
       "decline": "Fortsæt uden",
       "allow": "Tillad eksterne tjenester",
-      "cookieSettings": "Cookieindstillinger"
+      "cookieSettings": "Cookieindstillinger",
+      "available": "Tilgængelig i version 1",
+      "workflowIntro": "Opret dit event, byg planen og afvikl eventet i én samlet arbejdsgang."
     },
     "de": {
       "label": "START AM 1. NOVEMBER 2026",
@@ -133,8 +137,8 @@
       "experience": "Entwickelt aus praktischer Erfahrung mit Camps, Seminaren und internationalen Sportveranstaltungen.",
       "soon": "Demnächst verfügbar",
       "planned": "Geplant",
-      "statusTitle": "Produktvorschau",
-      "status": "Die gezeigten Abläufe und Funktionen sind geplant. Die Verfügbarkeit für Ihre Veranstaltung wird bei einer Demo oder beim Pilotstart bestätigt; sie ist nicht zum Start garantiert.",
+      "statusTitle": "Camp-Planner Version 1",
+      "status": "Version 1 ist bereit für die Planung und Durchführung Ihrer Sportveranstaltungen.",
       "priceHeadline": "Kein Abonnement. Zahlen Sie nur für angemeldete Teilnehmer.",
       "price": "2 €* pro angemeldetem Teilnehmer",
       "support": "Der Einführungspreis gilt für Veranstaltungen mit bis zu 100 angemeldeten Teilnehmern. Planen Sie eine größere Veranstaltung? Kontaktieren Sie uns für ein individuelles Angebot.",
@@ -167,7 +171,9 @@
       "policy": "Cookie-Richtlinie lesen",
       "decline": "Ohne fortfahren",
       "allow": "Externe Dienste erlauben",
-      "cookieSettings": "Cookie-Einstellungen"
+      "cookieSettings": "Cookie-Einstellungen",
+      "available": "In Version 1 verfügbar",
+      "workflowIntro": "Erstellen Sie Ihre Veranstaltung, planen Sie den Ablauf und führen Sie das Event durch."
     },
     "sv": {
       "label": "LANSERAS 1 NOVEMBER 2026",
@@ -187,8 +193,8 @@
       "experience": "Byggt på praktisk erfarenhet av läger, seminarier och internationella idrottsevenemang.",
       "soon": "Kommer snart",
       "planned": "Planerat",
-      "statusTitle": "Förhandsvisning av produkten",
-      "status": "De arbetsflöden och funktioner som visas är planerade möjligheter. Tillgängligheten för ditt evenemang bekräftas vid en demo eller pilotstart; den garanteras inte vid lanseringen.",
+      "statusTitle": "Camp-Planner version 1",
+      "status": "Version 1 är redo att användas för att planera och genomföra dina idrottsevenemang.",
       "priceHeadline": "Ingen prenumeration. Betala bara för anmälda deltagare.",
       "price": "2 €* per anmäld deltagare",
       "support": "Lanseringspriset gäller evenemang med upp till 100 anmälda deltagare. Planerar du ett större evenemang? Kontakta oss för ett individuellt pris.",
@@ -221,7 +227,9 @@
       "policy": "Läs vår cookiepolicy",
       "decline": "Fortsätt utan",
       "allow": "Tillåt externa tjänster",
-      "cookieSettings": "Cookieinställningar"
+      "cookieSettings": "Cookieinställningar",
+      "available": "Tillgänglig i version 1",
+      "workflowIntro": "Skapa ditt evenemang, bygg planen och genomför evenemanget i ett sammanhängande arbetsflöde."
     },
     "no": {
       "label": "LANSERES 1. NOVEMBER 2026",
@@ -241,8 +249,8 @@
       "experience": "Bygget på praktisk erfaring med leirer, seminarer og internasjonale idrettsarrangementer.",
       "soon": "Kommer snart",
       "planned": "Planlagt",
-      "statusTitle": "Forhåndsvisning av produktet",
-      "status": "Arbeidsflytene og funksjonene som vises, er planlagte muligheter. Tilgjengeligheten for arrangementet ditt bekreftes ved en demo eller pilotoppstart; den garanteres ikke ved lansering.",
+      "statusTitle": "Camp-Planner versjon 1",
+      "status": "Versjon 1 er klar til bruk for planlegging og gjennomføring av idrettsarrangementene dine.",
       "priceHeadline": "Intet abonnement. Betal kun for påmeldte deltakere.",
       "price": "€2* per påmeldt deltaker",
       "support": "Lanseringsprisen gjelder arrangementer med opptil 100 påmeldte deltakere. Planlegger du et større arrangement? Kontakt oss for en individuell pris.",
@@ -275,77 +283,79 @@
       "policy": "Les retningslinjene for informasjonskapsler",
       "decline": "Fortsett uten",
       "allow": "Tillat eksterne tjenester",
-      "cookieSettings": "Innstillinger for informasjonskapsler"
+      "cookieSettings": "Innstillinger for informasjonskapsler",
+      "available": "Tilgjengelig i versjon 1",
+      "workflowIntro": "Opprett arrangementet, bygg planen og gjennomfør arrangementet i én arbeidsflyt."
     }
   },
   "featureStatus": {
     "eventSetup": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/events/new-camp.js; src/modules/setup/settings.js"
     },
     "registration": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/registration/public.js; docs/FUNCTION_MATRIX.md: Public Registration Active (automatic email receipts are not default)"
     },
     "scheduling": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/planning/auto-assign.js; docs/FUNCTION_MATRIX.md: Planning Active; automatic Training/Meeting templates"
     },
     "people": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/participants/participants.js; src/modules/instructors/instructors.js; src/modules/volunteers/volunteers.js"
     },
     "venues": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/areas/areas.js; docs/FUNCTION_MATRIX.md: Areas & Tatami Active, conditional by event type"
     },
     "sms": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "planned",
+      "evidence": "App main b190942: docs/COMMUNICATION_HUB_V1_SPEC.md and docs/FUNCTION_MATRIX.md. Communication hub planned; SMS and Web Push are later adapters."
     },
     "push": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "planned",
+      "evidence": "App main b190942: docs/COMMUNICATION_HUB_V1_SPEC.md and docs/FUNCTION_MATRIX.md. Communication hub planned; SMS and Web Push are later adapters."
     },
     "checkPoint": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/checkin/checkin.js; docs/FUNCTION_MATRIX.md: Check-in Active v1; online only, no cross-station realtime push"
     },
     "qrCheckIn": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: docs/USER_GUIDE.md section 16.3 QR flow; src/modules/checkin/checkin.js"
     },
     "badges": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: docs/FUNCTION_MATRIX.md: Badge printing Active v1; src/modules/setup/settings.js printing profiles"
     },
     "accommodation": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/setup/accommodation.js; docs/FUNCTION_MATRIX.md: Accommodation Active"
     },
     "finance": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/finance/finance.js; src/modules/finance/calculations.js; docs/FUNCTION_MATRIX.md: Finance Active"
     },
     "reporting": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/reports/export.js; src/modules/finance/outcomes.js; docs/FUNCTION_MATRIX.md: Finance exports and NPS Active; not automated bulk follow-up"
     },
     "liveBoard": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/live/public-live.js; docs/FUNCTION_MATRIX.md: Live Day and Full views Active"
     },
     "instantUpdates": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: src/modules/live/public-live.js; docs/FUNCTION_MATRIX.md: Live updates available, NOT instantaneous global sync or cross-station push"
     },
     "participantMobile": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "available",
+      "evidence": "Product owner confirms version 1 ready. App main b190942: docs/FUNCTION_MATRIX.md: Mobile Active/responsive and public Live views; no claim of individualized participant schedules"
     },
     "communications": {
-      "status": "soon",
-      "evidence": "Production readiness and launch inclusion are not verified in the marketing repository."
+      "status": "planned",
+      "evidence": "App main b190942: docs/COMMUNICATION_HUB_V1_SPEC.md and docs/FUNCTION_MATRIX.md. Communication hub planned; SMS and Web Push are later adapters."
     },
     "api": {
       "status": "planned",
@@ -358,6 +368,20 @@
     "integrations": {
       "status": "planned",
       "evidence": "Described as planned in the existing feature matrix."
+    },
+    "multipleEvents": {
+      "status": "available",
+      "evidence": "App main b190942: src/modules/events/camps.js lists organization events; docs/FUNCTION_MATRIX.md includes assigned events, create, archive and restore."
+    },
+    "roles": {
+      "status": "available",
+      "evidence": "App main b190942: docs/FUNCTION_MATRIX.md roles and access matrix; src/modules/admin/organization-users.js and src/core/organization-modules.js."
     }
+  },
+  "productStatus": {
+    "version": "1",
+    "readiness": "ready",
+    "confirmedBy": "Product owner in this conversation, 23 September 2026",
+    "appCommit": "b190942e5a0518197ca35c6f82cb56ebb2b479f0"
   }
 }

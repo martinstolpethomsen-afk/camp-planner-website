@@ -32,6 +32,13 @@ for file,soup in pages.items():
         lang=soup.html.get('lang','en');t=config['locales'].get(lang,config['locales']['en'])
         if t['label'] not in text or t['text'] not in text:errors.append(f'{file}: launch mismatch')
         if soup.select_one('meta[name="camp-planner-launch-date"]')['content']!=config['launchDate']:errors.append(f'{file}: metadata date')
+    for card in soup.select('article[data-feature], .module-item[data-feature]'):
+        key=card['data-feature']
+        if config['featureStatus'][key]['status']=='available' and card.select_one('.cp-feature-status'):
+            errors.append(f'{file}: active V1 feature has a future-feature badge: {key}')
+    if soup.select_one('.cp-product-status') and config.get('productStatus',{}).get('readiness')=='ready':
+        lang=soup.html.get('lang','en');t=config['locales'].get(lang,config['locales']['en'])
+        if soup.select_one('.cp-product-status p').get_text()!=t['status']:errors.append(f'{file}: stale product-readiness notice')
     for node in soup.select('.feature-matrix td[data-feature], .cp-feature-status[data-feature]'):
         lang=soup.html.get('lang','en');t=config['locales'].get(lang,config['locales']['en'])
         expected=t[config['featureStatus'][node['data-feature']]['status']]

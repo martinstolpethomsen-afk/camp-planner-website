@@ -37,6 +37,7 @@ def feature_key(text):
     return 'eventSetup'
 
 def status_badge(soup,key,t):
+    if CONFIG['featureStatus'][key]['status']=='available': return soup.new_string('')
     return tag(soup,'p',t[CONFIG['featureStatus'][key]['status']],**{'class':'cp-feature-status','data-feature':key})
 
 for path in sorted(ROOT.rglob('*.html')):
@@ -93,7 +94,7 @@ for path in sorted(ROOT.rglob('*.html')):
         obj=json.loads(data.string)
         if obj.get('@type')=='SoftwareApplication':
             # A planned launch date is not a claim that software was released.
-            obj['description']='Planned sports-event management platform. '+t['label']+'. '+t['status']
+            obj['description']='Sports-event management platform, version 1 ready to use. '+t['label']+'. '+t['status']
             data.string=json.dumps(obj,ensure_ascii=False,separators=(',',':'))
     # Normalize competing conversion links while retaining informational links.
     for a in soup.select('a[href]'):
@@ -133,8 +134,8 @@ for path in sorted(ROOT.rglob('*.html')):
     for img in soup.select('img[src*="dashboard-mockup"]'):
         if not img.parent.select_one('.cp-demo-label'):
             img.insert_before(tag(soup,'p',t['example'],**{'class':'cp-demo-label'}))
-    # Prominent context plus labels directly on each feature card; none is sold
-    # as included/launch-ready without recorded production evidence.
+    # Owner-confirmed V1 readiness. Label future extensions only; active cards
+    # retain stable feature keys without a redundant availability badge.
     if not is_legal and path.name not in ['about-us.html','about-image-test.html','about.html']:
         notice=soup.select_one('.cp-product-status')
         if not notice:
@@ -146,8 +147,9 @@ for path in sorted(ROOT.rglob('*.html')):
     selectors='.feature-card, .workflow-card, .module-item, .cp26-step, .cp037-pillar-grid article, .cp037-flow-steps article, .platform-extra-flow article, .cp048-local-flow-steps article'
     for card in soup.select(selectors):
         existing=card.select_one('.cp-feature-status')
-        key=existing.get('data-feature') if existing else feature_key(card.get_text(' ',strip=True))
+        key=existing.get('data-feature') if existing else card.get('data-feature') or feature_key((card.find(['h3','strong']) or card).get_text(' ',strip=True))
         if card.select_one('img[src*="coach"]'): key='people'
+        card['data-feature']=key
         if existing: existing.decompose()
         card.append(status_badge(soup,key,t))
     for card in soup.select('.feature-card'):
@@ -155,9 +157,10 @@ for path in sorted(ROOT.rglob('*.html')):
         if badge:
             description=card.find('p')
             email, push = {'en':('Email','push notifications'),'da':('E-mail','pushbeskeder'),'de':('E-Mail','Push-Nachrichten'),'sv':('E-post','pushnotiser'),'no':('E-post','pushvarsler')}[lang]
-            description.string=f'{email}. SMS: {t[CONFIG["featureStatus"]["sms"]["status"]]}. {push}: {t[CONFIG["featureStatus"]["push"]["status"]]}.'
+            description.string={'en':'A dedicated communication hub, SMS and push notifications are planned extensions.','da':'Et samlet kommunikationsmodul, SMS og pushbeskeder er planlagte udvidelser.','de':'Ein Kommunikationsmodul, SMS und Push-Nachrichten sind geplante Erweiterungen.','sv':'En kommunikationsmodul, SMS och pushnotiser är planerade utökningar.','no':'En kommunikasjonsmodul, SMS og pushvarsler er planlagte utvidelser.'}[lang]
     for node in soup.select('.cp-feature-status[data-feature]'):
-        node.string=t[CONFIG['featureStatus'][node['data-feature']]['status']]
+        if CONFIG['featureStatus'][node['data-feature']]['status']=='available': node.decompose()
+        else: node.string=t[CONFIG['featureStatus'][node['data-feature']]['status']]
     for story in soup.select('.platform-copy, .platform-modules .section-head, .platform-hero-copy, .cp26-workflow-copy, .cp037-flow-copy, .platform-hero ~ section .story'):
         if not story.select_one('.cp-feature-status'): story.append(status_badge(soup,'instantUpdates',t))
     if is_home:
@@ -176,8 +179,8 @@ for path in sorted(ROOT.rglob('*.html')):
         if flow:
             flow['id']='workflow'
             flow['class']='section cp26-workflow-section'.split()
-            steps=''.join(f'<article class="cp26-step"><span>0{i+1}</span><h3>{title}</h3><p>{desc}</p><p class="cp-feature-status" data-feature="{key}">{t[CONFIG["featureStatus"][key]["status"]]}</p></article>' for i,((title,desc),key) in enumerate(zip(t['steps'],['eventSetup','scheduling','checkPoint'])))
-            replace_contents(flow,f'<div class="cp26-workflow-wrap"><div class="cp26-workflow-copy"><p class="eyebrow red">{t["how"]}</p><h2>{t["how"]}</h2><p>{t["status"]}</p></div><div class="cp26-workflow-grid cp-launch-steps">{steps}</div></div>')
+            steps=''.join(f'<article class="cp26-step" data-feature="{key}"><span>0{i+1}</span><h3>{title}</h3><p>{desc}</p>{status_badge(soup,key,t)}</article>' for i,((title,desc),key) in enumerate(zip(t['steps'],['eventSetup','scheduling','checkPoint'])))
+            replace_contents(flow,f'<div class="cp26-workflow-wrap"><div class="cp26-workflow-copy"><p class="eyebrow red">{t["how"]}</p><h2>{t["how"]}</h2><p>{t["workflowIntro"]}</p></div><div class="cp26-workflow-grid cp-launch-steps">{steps}</div></div>')
         pricing=soup.select_one('#pricing')
         if not pricing:
             pricing=soup.new_tag('section',attrs={'id':'pricing','class':'pricing-preview'})
@@ -190,11 +193,20 @@ for path in sorted(ROOT.rglob('*.html')):
         for matrix in soup.select('.feature-matrix'):
             for row in matrix.select('tbody tr:not(.matrix-group)'):
                 for i,cell in enumerate(row.select('td')):
+                    known_key={'Multiple active events':'multipleEvents','Team roles and permissions':'roles'}.get(row.th.get_text(strip=True))
+                    if i==0 and known_key:
+                        cell.string=t[CONFIG['featureStatus'][known_key]['status']]
+                        cell['data-feature']=known_key
+                        continue
                     if cell.get_text(strip=True)=='—': continue
+                    if row.th.get_text(strip=True)=='Dedicated onboarding and support':
+                        cell.string='Contact us' if i==0 else t['planned']
+                        cell.attrs.pop('data-feature',None)
+                        continue
                     key=feature_key(row.th.get_text())
                     cell.string=t[CONFIG['featureStatus'][key]['status']] if i==0 else t['planned']
                     if i==0: cell['data-feature']=key
-            for h in soup.select('.feature-matrix-heading h2'): h.string='Planned features by plan'
+            for h in soup.select('.feature-matrix-heading h2'): h.string='Version 1 features and planned upgrades'
             for p in soup.select('.feature-matrix-heading > p:not(.eyebrow)'): p.string=t['planNote']+' '+t['status']
         for p in soup.select('.cp051-about-teaser .eyebrow'): p.string=t['about']
         for a in soup.select('.cp051-about-teaser a'): a['href']=about
@@ -219,7 +231,7 @@ for path in sorted(ROOT.rglob('*.html')):
         if not wrap.select_one('.cp-demo-duration'):
             wrap.h2.insert_after(tag(soup,'p','Camp-Planner introduction – approximately 30 minutes.',**{'class':'cp-demo-duration'}))
         empty=soup.select_one('.lead-hero .hubspot-card')
-        if empty: replace_contents(empty,f'<h2>{t["demo"]}</h2><p>Discuss your event and explore the planned workflows in an introduction of approximately 30 minutes.</p>'+link(LINKS['demo'],t['demo'],'btn btn-primary'))
+        if empty: replace_contents(empty,f'<h2>{t["demo"]}</h2><p>Discuss your event and explore the version 1 workflows in an introduction of approximately 30 minutes.</p>'+link(LINKS['demo'],t['demo'],'btn btn-primary'))
     for badges in soup.select('.lead-badges'):
         replace_contents(badges,'<span>For event organizers</span><span>Pilot access is open</span>')
     # Make old login landing page useful without changing the app itself.
