@@ -154,6 +154,9 @@ for path in sorted(ROOT.rglob('*.html')):
         card.append(status_badge(soup,key,t))
     # One icon family and card structure for every language homepage.
     if is_home:
+        for stylesheet in soup.select('link[rel="stylesheet"]'):
+            if stylesheet.get('href', '').split('?')[0].endswith('styles.css'):
+                stylesheet['href'] = '/styles.css?v=features-20260923'
         section = soup.select_one('#features')
         section['class'] = ['section', 'white', 'cp049-local-features']
         section.select_one('.feature-grid')['class'] = ['feature-grid', 'cp049-feature-grid']
