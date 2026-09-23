@@ -54,11 +54,12 @@
       "terms": "Terms",
       "legal": "Legal & Privacy",
       "data": "Data & Privacy",
-      "consentTitle": "External content",
+      "consentTitle": "Cookies and external content",
       "consent": "We use HubSpot forms and meeting booking when you allow external services. These services may store cookies and process usage data. You can continue without them.",
       "policy": "Read our cookie policy",
       "decline": "Continue without",
-      "allow": "Allow external services"
+      "allow": "Allow external services",
+      "cookieSettings": "Cookie settings"
     },
     "da": {
       "label": "LANCERES 1. NOVEMBER 2026",
@@ -107,11 +108,12 @@
       "terms": "Vilkår",
       "legal": "Jura og privatliv",
       "data": "Data og privatliv",
-      "consentTitle": "Eksternt indhold",
+      "consentTitle": "Cookies og eksternt indhold",
       "consent": "Vi bruger HubSpot-formularer og mødebooking, når du tillader eksterne tjenester. Tjenesterne kan gemme cookies og behandle brugsdata. Du kan fortsætte uden dem.",
       "policy": "Læs vores cookiepolitik",
       "decline": "Fortsæt uden",
-      "allow": "Tillad eksterne tjenester"
+      "allow": "Tillad eksterne tjenester",
+      "cookieSettings": "Cookieindstillinger"
     },
     "de": {
       "label": "START AM 1. NOVEMBER 2026",
@@ -160,11 +162,12 @@
       "terms": "Nutzungsbedingungen",
       "legal": "Rechtliches und Datenschutz",
       "data": "Daten und Datenschutz",
-      "consentTitle": "Externe Inhalte",
+      "consentTitle": "Cookies und externe Inhalte",
       "consent": "Wir verwenden HubSpot-Formulare und Terminbuchung, wenn Sie externe Dienste erlauben. Diese Dienste können Cookies speichern und Nutzungsdaten verarbeiten. Sie können ohne sie fortfahren.",
       "policy": "Cookie-Richtlinie lesen",
       "decline": "Ohne fortfahren",
-      "allow": "Externe Dienste erlauben"
+      "allow": "Externe Dienste erlauben",
+      "cookieSettings": "Cookie-Einstellungen"
     },
     "sv": {
       "label": "LANSERAS 1 NOVEMBER 2026",
@@ -213,11 +216,12 @@
       "terms": "Villkor",
       "legal": "Juridik och integritet",
       "data": "Data och integritet",
-      "consentTitle": "Externt innehåll",
+      "consentTitle": "Cookies och externt innehåll",
       "consent": "Vi använder HubSpot-formulär och mötesbokning när du tillåter externa tjänster. Dessa tjänster kan lagra cookies och behandla användningsdata. Du kan fortsätta utan dem.",
       "policy": "Läs vår cookiepolicy",
       "decline": "Fortsätt utan",
-      "allow": "Tillåt externa tjänster"
+      "allow": "Tillåt externa tjänster",
+      "cookieSettings": "Cookieinställningar"
     },
     "no": {
       "label": "LANSERES 1. NOVEMBER 2026",
@@ -266,11 +270,12 @@
       "terms": "Vilkår",
       "legal": "Juridisk og personvern",
       "data": "Data og personvern",
-      "consentTitle": "Eksternt innhold",
+      "consentTitle": "Informasjonskapsler og eksternt innhold",
       "consent": "Vi bruker HubSpot-skjemaer og møtebestilling når du tillater eksterne tjenester. Disse tjenestene kan lagre informasjonskapsler og behandle bruksdata. Du kan fortsette uten dem.",
       "policy": "Les retningslinjene for informasjonskapsler",
       "decline": "Fortsett uten",
-      "allow": "Tillat eksterne tjenester"
+      "allow": "Tillat eksterne tjenester",
+      "cookieSettings": "Innstillinger for informasjonskapsler"
     }
   },
   "featureStatus": {

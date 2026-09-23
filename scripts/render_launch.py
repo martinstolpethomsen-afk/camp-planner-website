@@ -79,7 +79,7 @@ for path in sorted(ROOT.rglob('*.html')):
     if not ui:
         ui=soup.new_tag('script',attrs={'id':'cp-site-copy','type':'application/json'})
         soup.head.append(ui)
-    ui.string=json.dumps({k:t[k] for k in ['skip','privacy','cookies','consentTitle','consent','policy','decline','allow']},ensure_ascii=False)
+    ui.string=json.dumps({k:t[k] for k in ['skip','privacy','cookies','cookieSettings','consentTitle','consent','policy','decline','allow']},ensure_ascii=False)
     date = soup.select_one('meta[name="camp-planner-launch-date"]')
     if not date:
         date=soup.new_tag('meta',attrs={'name':'camp-planner-launch-date'})
@@ -147,6 +147,7 @@ for path in sorted(ROOT.rglob('*.html')):
     for card in soup.select(selectors):
         existing=card.select_one('.cp-feature-status')
         key=existing.get('data-feature') if existing else feature_key(card.get_text(' ',strip=True))
+        if card.select_one('img[src*="coach"]'): key='people'
         if existing: existing.decompose()
         card.append(status_badge(soup,key,t))
     for card in soup.select('.feature-card'):

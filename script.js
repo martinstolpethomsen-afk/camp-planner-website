@@ -38,18 +38,16 @@
   const consentScripts = () => [...document.querySelectorAll('script[data-cp-consent][data-src]')];
 
   function readPreference() {
-    try { return localStorage.getItem(storageKey); }
+    try {
+      const value = localStorage.getItem(storageKey);
+      return value === 'accepted' || value === 'declined' ? value : null;
+    }
     catch (_) { return null; }
   }
 
   function writePreference(value) {
     try { localStorage.setItem(storageKey, value); }
     catch (_) { /* The choice remains valid for this page view. */ }
-  }
-
-  function clearPreference() {
-    try { localStorage.removeItem(storageKey); }
-    catch (_) { /* Storage may be unavailable in privacy-restricted browsers. */ }
   }
 
   function loadExternalContent() {
@@ -78,6 +76,11 @@
     writePreference(value);
     document.querySelector('.cp-consent')?.remove();
     if (value === 'accepted') loadExternalContent();
+    else if (document.querySelector('script[data-loaded-by-consent]')) {
+      // Unload third-party frames/scripts that were already allowed on this view.
+      // Existing third-party cookies remain controlled by the visitor's browser.
+      window.location.reload();
+    }
   }
 
   function showConsent() {
@@ -85,10 +88,10 @@
     const banner = document.createElement('section');
     banner.className = 'cp-consent';
     banner.setAttribute('role', 'dialog');
-    banner.setAttribute('aria-label', copy.consentTitle || 'External content preferences');
+    banner.setAttribute('aria-label', copy.consentTitle || 'Cookies and external content');
     banner.innerHTML = `
       <div>
-        <strong>${copy.consentTitle || 'External content'}</strong>
+        <strong>${copy.consentTitle || 'Cookies and external content'}</strong>
         <p>${copy.consent || 'We use HubSpot forms and meeting booking when you allow external services. These services may store cookies and process usage data. You can continue without them.'}</p>
         <a href="/legal/cookie-policy.html">${copy.policy || 'Read our cookie policy'}</a>
       </div>
@@ -102,11 +105,18 @@
     });
   }
 
+  // Keep preferences reachable after either choice, on every content page.
+  const settingsHost = document.querySelector('footer nav') || document.querySelector('main');
+  if (settingsHost && !document.querySelector('[data-open-consent]')) {
+    const settings = document.createElement('button');
+    settings.type = 'button';
+    settings.className = 'cp-cookie-settings';
+    settings.setAttribute('data-open-consent', '');
+    settings.textContent = copy.cookieSettings || 'Cookie settings';
+    settingsHost.appendChild(settings);
+  }
   document.querySelectorAll('[data-open-consent]').forEach((button) => {
-    button.addEventListener('click', () => {
-      clearPreference();
-      showConsent();
-    });
+    button.addEventListener('click', showConsent);
   });
 
   document.querySelectorAll('footer nav').forEach((nav) => {
@@ -123,7 +133,7 @@
 
   const savedConsent = readPreference();
   if (savedConsent === 'accepted') loadExternalContent();
-  else if (consentScripts().length && !savedConsent) showConsent();
+  else if (!savedConsent) showConsent();
 
   document.querySelectorAll('[data-enable-external]').forEach((button) => {
     button.addEventListener('click', () => setConsent('accepted'));
