@@ -4068,3 +4068,8 @@ body{padding-bottom:var(--cp-launch-height, 0px)!important}
 .module-showcase>*{min-width:0}.planner-preview-grid>*{min-width:0}
 .planner-calendar{grid-template-columns:repeat(3,minmax(0,1fr))}.planner-block{min-width:0;overflow-wrap:anywhere}
 @media(max-width:760px){.module-preview{padding:12px}.planner-calendar{padding:10px;gap:6px}.planner-block{padding:8px;font-size:12px}}
+
+/* Cookie preferences remain available after the initial notice is dismissed. */
+.cp-cookie-settings{appearance:none;border:0;background:none;color:inherit;font:inherit;cursor:pointer;padding:0;text-align:left;text-decoration:underline;text-underline-offset:3px}
+.cp-cookie-settings:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+main>.cp-cookie-settings{display:block;margin:24px 0}
