@@ -4034,3 +4034,37 @@ header[data-cp-version="031"]{
 @media(max-width:760px){.launch-price-unit{font-size:15px}.pricing-preview{padding-inline:14px}.feature-matrix-wrap{margin-top:62px}.feature-matrix-scroll{border-radius:16px}.feature-matrix-heading{text-align:left;padding-inline:8px}}
 .launch-price-unit small{display:block;margin-top:6px;color:#aeb9c8;font-size:11px;font-weight:750;line-height:1.25}
 .launch-price strong sup{position:relative;top:-.45em;margin-left:3px;color:#fff;font-size:.22em;letter-spacing:0}.vat-note{display:block;margin-bottom:5px;color:#fff;font-weight:850}
+
+/* Shared launch content. Preserve the existing palette and responsive cards. */
+body{padding-bottom:var(--cp-launch-height, 0px)!important}
+.launch-bar-inner{padding:10px 0;gap:16px;line-height:1.45}
+.launch-bar-inner>span,.launch-bar-inner>a{flex:0 0 auto;max-width:100%}
+.launch-bar-inner>strong{font-size:14px;font-weight:600;max-width:640px}
+.launch-bar-inner>span{font-size:12px;letter-spacing:.08em}
+.cp-text-link{color:inherit;text-decoration:underline;text-underline-offset:4px;align-self:center;padding:10px 0;font-weight:700}
+.cp-demo-label{display:block;margin:0!important;padding:10px 16px!important;background:#0d1827;color:#fff!important;font-size:14px!important;line-height:1.4!important;font-weight:700!important;text-align:center}
+.cp-product-status{max-width:1180px;margin:24px auto;padding:18px 22px;border-left:3px solid #f3272b;background:#f4f6fa;color:#26364d}
+.cp-product-status strong{font-size:16px}.cp-product-status p{margin:6px 0 0;line-height:1.5}
+.cp-feature-status{display:table!important;max-width:100%;margin:12px 0 0!important;padding:5px 10px!important;border-radius:6px;background:#fff0f1!important;color:#a51b25!important;font-size:14px!important;line-height:1.4!important;font-weight:750!important;letter-spacing:0!important}
+.cp-launch-steps{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.launch-price-unit{max-width:220px}.matrix-disclaimer{font-size:14px;line-height:1.5}
+.cp-consent{bottom:calc(var(--cp-launch-height,0px) + 12px);max-width:1100px;padding:14px 16px;gap:16px;max-height:calc(100dvh - var(--cp-launch-height,0px) - 32px);overflow:auto}
+.cp-consent p,.cp-consent a{font-size:14px;line-height:1.4}.cp-consent strong{font-size:16px}
+.cp-consent-actions{gap:8px}.cp-consent button{font-size:14px;padding:11px 14px}
+@media(min-width:781px) and (max-width:1300px){.cp31-header{height:auto!important;min-height:90px!important;flex-wrap:wrap!important;padding-block:12px!important}.cp31-nav{flex-wrap:wrap!important;justify-content:flex-start!important;gap:14px!important}}
+@media(max-width:760px){
+  .launch-bar-inner{gap:6px!important;padding:8px 0;width:calc(100% - 28px)}
+  .launch-bar-inner>strong{font-size:13px}.launch-bar-inner>a{font-size:14px}
+  .cp-product-status{margin:16px;padding:14px 16px;font-size:14px}
+  .cp-launch-steps{grid-template-columns:1fr!important}
+  .cp-consent{left:10px;right:10px;gap:10px;padding:12px 14px;border-radius:12px}
+  .cp-consent-actions{grid-template-columns:1fr 1fr}.cp-consent button{white-space:normal;line-height:1.35}
+}
+/* Keep every workflow step visible inside its column instead of clipping it. */
+.flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;min-width:0}
+.flow-line{display:none}.flow-item{min-width:0}
+.footer nav{flex-wrap:wrap;min-width:0;gap:14px 18px}
+@media(max-width:480px){.flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.module-showcase>*{min-width:0}.planner-preview-grid>*{min-width:0}
+.planner-calendar{grid-template-columns:repeat(3,minmax(0,1fr))}.planner-block{min-width:0;overflow-wrap:anywhere}
+@media(max-width:760px){.module-preview{padding:12px}.planner-calendar{padding:10px;gap:6px}.planner-block{padding:8px;font-size:12px}}

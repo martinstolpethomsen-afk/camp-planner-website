@@ -1,5 +1,13 @@
 /* Camp-Planner shared site behaviour */
 (function () {
+  const copy = JSON.parse(document.getElementById('cp-site-copy')?.textContent || '{}');
+  const launchBar = document.querySelector('.launch-bar');
+  if (launchBar) {
+    const reserveLaunchSpace = () => document.body.style.setProperty('--cp-launch-height', `${launchBar.getBoundingClientRect().height}px`);
+    reserveLaunchSpace();
+    if ('ResizeObserver' in window) new ResizeObserver(reserveLaunchSpace).observe(launchBar);
+    else window.addEventListener('resize', reserveLaunchSpace);
+  }
   const revealItems = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
@@ -22,7 +30,7 @@
     const skip = document.createElement('a');
     skip.className = 'skip-link';
     skip.href = `#${main.id}`;
-    skip.textContent = 'Skip to main content';
+    skip.textContent = copy.skip || 'Skip to main content';
     document.body.insertBefore(skip, document.body.firstChild);
   }
 
@@ -77,16 +85,16 @@
     const banner = document.createElement('section');
     banner.className = 'cp-consent';
     banner.setAttribute('role', 'dialog');
-    banner.setAttribute('aria-label', 'External content preferences');
+    banner.setAttribute('aria-label', copy.consentTitle || 'External content preferences');
     banner.innerHTML = `
       <div>
-        <strong>External content</strong>
-        <p>We use HubSpot forms and meeting booking when you allow external services. These services may store cookies and process usage data. You can continue without them.</p>
-        <a href="/legal/cookie-policy.html">Read our cookie policy</a>
+        <strong>${copy.consentTitle || 'External content'}</strong>
+        <p>${copy.consent || 'We use HubSpot forms and meeting booking when you allow external services. These services may store cookies and process usage data. You can continue without them.'}</p>
+        <a href="/legal/cookie-policy.html">${copy.policy || 'Read our cookie policy'}</a>
       </div>
       <div class="cp-consent-actions">
-        <button type="button" class="btn btn-dark" data-consent="declined">Continue without</button>
-        <button type="button" class="btn btn-primary" data-consent="accepted">Allow external services</button>
+        <button type="button" class="btn btn-dark" data-consent="declined">${copy.decline || 'Continue without'}</button>
+        <button type="button" class="btn btn-primary" data-consent="accepted">${copy.allow || 'Allow external services'}</button>
       </div>`;
     document.body.appendChild(banner);
     banner.querySelectorAll('[data-consent]').forEach((button) => {
@@ -105,10 +113,10 @@
     if (!nav.querySelector('a[href="/legal/cookie-policy.html"]')) {
       const privacy = document.createElement('a');
       privacy.href = '/legal/privacy-policy.html';
-      privacy.textContent = 'Privacy';
+      privacy.textContent = copy.privacy || 'Privacy';
       const cookies = document.createElement('a');
       cookies.href = '/legal/cookie-policy.html';
-      cookies.textContent = 'Cookies';
+      cookies.textContent = copy.cookies || 'Cookies';
       nav.append(privacy, cookies);
     }
   });
