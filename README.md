@@ -1,3 +1,6 @@
+> Current launch content and maintenance: [Launch readiness](docs/launch-readiness.md).
+> Official launch: 1 November 2026. The notes below are historical.
+
 # CP-001 – Camp-Planner Homepage v1
 
 Upload-ready static website package.
@@ -54,7 +57,7 @@ Replace placeholder SVG files with real transparent SVG/PNG logos later using th
 
 ## CP-004 Launch + Trusted Update
 Updates:
-- Added top launch announcement bar: "Launching this October".
+- Added top launch announcement bar (superseded by the shared launch configuration).
 - Added newsletter signup section on homepage.
 - Added real MAAS, Tora Ryu/Nivå and Nivå Budoklub logos to Trusted section.
 - Kept placeholder logo slots for Budo Nord, WUKF and IKF until real logos are provided.
