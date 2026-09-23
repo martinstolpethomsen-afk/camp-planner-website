@@ -4073,3 +4073,7 @@ body{padding-bottom:var(--cp-launch-height, 0px)!important}
 .cp-cookie-settings{appearance:none;border:0;background:none;color:inherit;font:inherit;cursor:pointer;padding:0;text-align:left;text-decoration:underline;text-underline-offset:3px}
 .cp-cookie-settings:focus-visible{outline:2px solid currentColor;outline-offset:5px}
 main>.cp-cookie-settings{display:block;margin:24px 0}
+
+/* Shared feature icon family across all homepages. */
+#features .cp-feature-icon { width:64px; height:64px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; border:1px solid #f1dfe2; border-radius:18px; background:#fff7f8; }
+#features .cp-feature-icon img { display:block; width:56px; height:56px; margin:0; object-fit:contain; }
