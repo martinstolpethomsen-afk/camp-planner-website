@@ -9,7 +9,7 @@
   "locales": {
     "en": {
       "label": "LAUNCHING 1 NOVEMBER 2026",
-      "text": "Pilot access is open. Book a demo or apply to become an early Camp-Planner organizer.",
+      "text": "Free access from 1 November to 31 December 2026, with limited support.",
       "demo": "Book a Demo",
       "pilot": "Apply for Pilot Access",
       "platform": "Platform",
@@ -27,11 +27,11 @@
       "planned": "Planned",
       "statusTitle": "Camp-Planner version 1",
       "status": "Version 1 is ready to use for planning and running your sports events.",
-      "priceHeadline": "No subscription. Pay only for registered participants.",
-      "price": "€2* per registered participant",
-      "support": "The launch price applies to events with up to 100 registered participants. Planning a larger event? Contact us for individual pricing.",
-      "footnote": "* VAT is added where applicable. Limited-time launch offer.",
-      "planNote": "Club, Federation and Enterprise describe planned product directions, not currently available features or binding delivery commitments.",
+      "priceHeadline": "Free access in November and December 2026",
+      "price": "Core / Pro / Premium",
+      "support": "Free access from 1 November to 31 December 2026, with limited support.",
+      "footnote": "Competition is a separate add-on. Package prices and detailed inclusions will be confirmed separately.",
+      "planNote": "Competition is a separate add-on. Package prices and detailed inclusions will be confirmed separately.",
       "how": "How it works",
       "steps": [
         [
@@ -61,11 +61,13 @@
       "allow": "Allow external services",
       "cookieSettings": "Cookie settings",
       "available": "Available in version 1",
-      "workflowIntro": "Create your event, build the plan and run the event in one workflow."
+      "workflowIntro": "Create your event, build the plan and run the event in one workflow.",
+      "launchAccess": "Launch access",
+      "matrixTitle": "Packages"
     },
     "da": {
       "label": "LANCERES 1. NOVEMBER 2026",
-      "text": "Der er åbent for pilotadgang. Book en demo eller ansøg om at blive en af de første Camp-Planner-arrangører.",
+      "text": "Gratis adgang fra 1. november til 31. december 2026 med begrænset support.",
       "demo": "Book en demo",
       "pilot": "Ansøg om pilotadgang",
       "platform": "Platform",
@@ -83,11 +85,11 @@
       "planned": "Planlagt",
       "statusTitle": "Camp-Planner version 1",
       "status": "Version 1 er klar til brug til planlægning og afvikling af dine sportsevents.",
-      "priceHeadline": "Intet abonnement. Betal kun for tilmeldte deltagere.",
-      "price": "€2* pr. tilmeldt deltager",
-      "support": "Launchprisen gælder events med op til 100 tilmeldte deltagere. Planlægger du et større event, kan du kontakte os for en individuel pris.",
-      "footnote": "* Moms tillægges, hvor det er relevant. Tidsbegrænset launchtilbud.",
-      "planNote": "Club, Federation og Enterprise er planlagte produktretninger, ikke aktuelt tilgængelige funktioner eller bindende leveringsløfter.",
+      "priceHeadline": "Gratis adgang i november og december 2026",
+      "price": "Core / Pro / Premium",
+      "support": "Gratis adgang fra 1. november til 31. december 2026 med begrænset support.",
+      "footnote": "Competition er et separat add-on. Pakkepriser og detaljeret indhold bekræftes særskilt.",
+      "planNote": "Competition er et separat add-on. Pakkepriser og detaljeret indhold bekræftes særskilt.",
       "how": "Sådan virker det",
       "steps": [
         [
@@ -117,11 +119,13 @@
       "allow": "Tillad eksterne tjenester",
       "cookieSettings": "Cookieindstillinger",
       "available": "Tilgængelig i version 1",
-      "workflowIntro": "Opret dit event, byg planen og afvikl eventet i én samlet arbejdsgang."
+      "workflowIntro": "Opret dit event, byg planen og afvikl eventet i én samlet arbejdsgang.",
+      "launchAccess": "Launchadgang",
+      "matrixTitle": "Pakker"
     },
     "de": {
       "label": "START AM 1. NOVEMBER 2026",
-      "text": "Der Pilotzugang ist geöffnet. Buchen Sie eine Demo oder bewerben Sie sich als einer der ersten Camp-Planner-Veranstalter.",
+      "text": "Kostenloser Zugang vom 1. November bis 31. Dezember 2026 mit eingeschränktem Support.",
       "demo": "Demo buchen",
       "pilot": "Pilotzugang beantragen",
       "platform": "Plattform",
@@ -139,11 +143,11 @@
       "planned": "Geplant",
       "statusTitle": "Camp-Planner Version 1",
       "status": "Version 1 ist bereit für die Planung und Durchführung Ihrer Sportveranstaltungen.",
-      "priceHeadline": "Kein Abonnement. Zahlen Sie nur für angemeldete Teilnehmer.",
-      "price": "2 €* pro angemeldetem Teilnehmer",
-      "support": "Der Einführungspreis gilt für Veranstaltungen mit bis zu 100 angemeldeten Teilnehmern. Planen Sie eine größere Veranstaltung? Kontaktieren Sie uns für ein individuelles Angebot.",
-      "footnote": "* Zuzüglich Mehrwertsteuer, sofern anwendbar. Zeitlich begrenztes Einführungsangebot.",
-      "planNote": "Club, Federation und Enterprise sind geplante Produktrichtungen, keine aktuell verfügbaren Funktionen oder verbindlichen Lieferzusagen.",
+      "priceHeadline": "Kostenloser Zugang im November und Dezember 2026",
+      "price": "Core / Pro / Premium",
+      "support": "Kostenloser Zugang vom 1. November bis 31. Dezember 2026 mit eingeschränktem Support.",
+      "footnote": "Competition ist ein separates Add-on. Paketpreise und detaillierte Leistungen werden separat bestätigt.",
+      "planNote": "Competition ist ein separates Add-on. Paketpreise und detaillierte Leistungen werden separat bestätigt.",
       "how": "So funktioniert es",
       "steps": [
         [
@@ -173,11 +177,13 @@
       "allow": "Externe Dienste erlauben",
       "cookieSettings": "Cookie-Einstellungen",
       "available": "In Version 1 verfügbar",
-      "workflowIntro": "Erstellen Sie Ihre Veranstaltung, planen Sie den Ablauf und führen Sie das Event durch."
+      "workflowIntro": "Erstellen Sie Ihre Veranstaltung, planen Sie den Ablauf und führen Sie das Event durch.",
+      "launchAccess": "Zugang zum Launch",
+      "matrixTitle": "Pakete"
     },
     "sv": {
       "label": "LANSERAS 1 NOVEMBER 2026",
-      "text": "Pilotåtkomsten är öppen. Boka en demo eller ansök om att bli en av de första Camp-Planner-arrangörerna.",
+      "text": "Gratis tillgång från 1 november till 31 december 2026 med begränsad support.",
       "demo": "Boka en demo",
       "pilot": "Ansök om pilotåtkomst",
       "platform": "Plattform",
@@ -195,11 +201,11 @@
       "planned": "Planerat",
       "statusTitle": "Camp-Planner version 1",
       "status": "Version 1 är redo att användas för att planera och genomföra dina idrottsevenemang.",
-      "priceHeadline": "Ingen prenumeration. Betala bara för anmälda deltagare.",
-      "price": "2 €* per anmäld deltagare",
-      "support": "Lanseringspriset gäller evenemang med upp till 100 anmälda deltagare. Planerar du ett större evenemang? Kontakta oss för ett individuellt pris.",
-      "footnote": "* Moms tillkommer där det är tillämpligt. Tidsbegränsat lanseringserbjudande.",
-      "planNote": "Club, Federation och Enterprise är planerade produktinriktningar, inte tillgängliga funktioner eller bindande leveranslöften.",
+      "priceHeadline": "Gratis tillgång i november och december 2026",
+      "price": "Core / Pro / Premium",
+      "support": "Gratis tillgång från 1 november till 31 december 2026 med begränsad support.",
+      "footnote": "Competition är ett separat tillägg. Paketpriser och detaljerat innehåll bekräftas separat.",
+      "planNote": "Competition är ett separat tillägg. Paketpriser och detaljerat innehåll bekräftas separat.",
       "how": "Så fungerar det",
       "steps": [
         [
@@ -229,11 +235,13 @@
       "allow": "Tillåt externa tjänster",
       "cookieSettings": "Cookieinställningar",
       "available": "Tillgänglig i version 1",
-      "workflowIntro": "Skapa ditt evenemang, bygg planen och genomför evenemanget i ett sammanhängande arbetsflöde."
+      "workflowIntro": "Skapa ditt evenemang, bygg planen och genomför evenemanget i ett sammanhängande arbetsflöde.",
+      "launchAccess": "Tillgång vid lansering",
+      "matrixTitle": "Paket"
     },
     "no": {
       "label": "LANSERES 1. NOVEMBER 2026",
-      "text": "Pilottilgangen er åpen. Bestill en demo eller søk om å bli en av de første Camp-Planner-arrangørene.",
+      "text": "Gratis tilgang fra 1. november til 31. desember 2026 med begrenset støtte.",
       "demo": "Bestill en demo",
       "pilot": "Søk om pilottilgang",
       "platform": "Plattform",
@@ -251,11 +259,11 @@
       "planned": "Planlagt",
       "statusTitle": "Camp-Planner versjon 1",
       "status": "Versjon 1 er klar til bruk for planlegging og gjennomføring av idrettsarrangementene dine.",
-      "priceHeadline": "Intet abonnement. Betal kun for påmeldte deltakere.",
-      "price": "€2* per påmeldt deltaker",
-      "support": "Lanseringsprisen gjelder arrangementer med opptil 100 påmeldte deltakere. Planlegger du et større arrangement? Kontakt oss for en individuell pris.",
-      "footnote": "* Merverdiavgift legges til der det er aktuelt. Tidsbegrenset lanseringstilbud.",
-      "planNote": "Club, Federation og Enterprise er planlagte produktretninger, ikke tilgjengelige funksjoner eller bindende leveringsløfter.",
+      "priceHeadline": "Gratis tilgang i november og desember 2026",
+      "price": "Core / Pro / Premium",
+      "support": "Gratis tilgang fra 1. november til 31. desember 2026 med begrenset støtte.",
+      "footnote": "Competition er et separat tillegg. Pakkepriser og detaljert innhold bekreftes separat.",
+      "planNote": "Competition er et separat tillegg. Pakkepriser og detaljert innhold bekreftes separat.",
       "how": "Slik fungerer det",
       "steps": [
         [
@@ -285,7 +293,9 @@
       "allow": "Tillat eksterne tjenester",
       "cookieSettings": "Innstillinger for informasjonskapsler",
       "available": "Tilgjengelig i versjon 1",
-      "workflowIntro": "Opprett arrangementet, bygg planen og gjennomfør arrangementet i én arbeidsflyt."
+      "workflowIntro": "Opprett arrangementet, bygg planen og gjennomfør arrangementet i én arbeidsflyt.",
+      "launchAccess": "Tilgang ved lansering",
+      "matrixTitle": "Pakker"
     }
   },
   "featureStatus": {
@@ -383,5 +393,17 @@
     "readiness": "ready",
     "confirmedBy": "Product owner in this conversation, 23 September 2026",
     "appCommit": "b190942e5a0518197ca35c6f82cb56ebb2b479f0"
+  },
+  "commercialDecision": {
+    "launchDate": "2026-11-01",
+    "freeAccessThrough": "2026-12-31",
+    "support": "limited",
+    "packages": [
+      "Core",
+      "Pro",
+      "Premium"
+    ],
+    "separateAddOn": "Competition",
+    "rates": "not specified by product owner"
   }
 }
