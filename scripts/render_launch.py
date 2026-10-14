@@ -210,25 +210,13 @@ for path in sorted(ROOT.rglob('*.html')):
         if not inner:
             inner=soup.new_tag('div',attrs={'class':'pricing-inner'})
             pricing.insert(0,inner)
-        replace_contents(inner,f'<p class="eyebrow">Launch Plan</p><h2>{t["priceHeadline"]}</h2><div class="launch-price" aria-label="{t["price"]}"><span class="launch-price-currency">€</span><strong>2<sup>*</sup></strong><span class="launch-price-unit">{escape(t["price"].replace("€2* ","").replace("2 €* ",""))}</span></div><p class="pricing-promise">{t["support"]}</p><div class="pricing-actions">{ctas(t)}</div><small class="pricing-note">{t["footnote"]}</small><p class="matrix-disclaimer">{t["planNote"]}</p>')
+        replace_contents(inner,f'<p class="eyebrow">{escape(t["launchAccess"])}</p><h2>{escape(t["priceHeadline"])}</h2><p class="pricing-promise">{escape(t["support"])}</p><h3>Core / Pro / Premium</h3><p>{escape(t["planNote"])}</p><div class="pricing-actions">{ctas(t)}</div>')
         for matrix in soup.select('.feature-matrix'):
-            for row in matrix.select('tbody tr:not(.matrix-group)'):
-                for i,cell in enumerate(row.select('td')):
-                    known_key={'Multiple active events':'multipleEvents','Team roles and permissions':'roles'}.get(row.th.get_text(strip=True))
-                    if i==0 and known_key:
-                        cell.string=t[CONFIG['featureStatus'][known_key]['status']]
-                        cell['data-feature']=known_key
-                        continue
-                    if cell.get_text(strip=True)=='—': continue
-                    if row.th.get_text(strip=True)=='Dedicated onboarding and support':
-                        cell.string='Contact us' if i==0 else t['planned']
-                        cell.attrs.pop('data-feature',None)
-                        continue
-                    key=feature_key(row.th.get_text())
-                    cell.string=t[CONFIG['featureStatus'][key]['status']] if i==0 else t['planned']
-                    if i==0: cell['data-feature']=key
-            for h in soup.select('.feature-matrix-heading h2'): h.string='Version 1 features and planned upgrades'
-            for p in soup.select('.feature-matrix-heading > p:not(.eyebrow)'): p.string=t['planNote']+' '+t['status']
+            table=matrix if matrix.name=='table' else matrix.select_one('table')
+            if table:
+                replace_contents(table,'<caption>'+escape(t['planNote'])+'</caption><thead><tr><th scope="col">'+escape(t['matrixTitle'])+'</th><th scope="col">Core</th><th scope="col">Pro</th><th scope="col">Premium</th></tr></thead><tbody><tr><th scope="row">'+escape(t['pricing'])+'</th><td colspan="3">'+escape(t['planNote'])+'</td></tr></tbody>')
+        for h in soup.select('.feature-matrix-heading h2'): h.string=t['matrixTitle']
+        for p in soup.select('.feature-matrix-heading > p:not(.eyebrow)'): p.string=t['planNote']
         for p in soup.select('.cp051-about-teaser .eyebrow'): p.string=t['about']
         for a in soup.select('.cp051-about-teaser a'): a['href']=about
     if lang!='en':
